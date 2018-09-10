@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const BlogPage = ({ data }) => (
   <div>
-    <h1>Cardano Docs List</h1>
+    <h1>Cardano Docs List 你好</h1>
     <ul>
       <li style={{ 
         listStyleType: 'none'
@@ -30,9 +30,9 @@ const BlogPage = ({ data }) => (
 )
 
 export const pageQuery = graphql`
-  query BlogIndexQuery($lang: String) {
+  query BlogIndexQueryCN {
     allMarkdownRemark(
-      filter: { frontmatter: { language: { eq: $lang } } }
+      filter: { frontmatter: { language: { eq: "cn" } } }
     ) {
       edges {
         node {
@@ -50,7 +50,5 @@ export const pageQuery = graphql`
     }
   }
 `
-
-const lang = { lang: 'en' }
 
 export default BlogPage
