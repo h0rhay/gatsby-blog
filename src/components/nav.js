@@ -7,7 +7,9 @@ const linkStyle = {
   textDecoration: 'none'
 }
 
-const Navigation = () => (
+const Navigation = () => {
+  console.log(this.state)
+  return(
   <div style={{
     background: 'dodgerBlue',
     color: 'white',
@@ -26,6 +28,7 @@ const Navigation = () => (
       <li><Link to='/contact' style={linkStyle} >Contact</Link></li>
     </ul>
   </div>
-);
+)
+};
 
 export default Navigation;

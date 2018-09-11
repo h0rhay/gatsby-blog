@@ -7,43 +7,71 @@ const linkStyle = {
   textDecoration: 'none'
 }
 
-const getLangs = (e) => {
-  let pathArray = location.pathname.split('/');
-  pathArray = pathArray.filter( (n) => n != "" ); //just get the actual directories
-  const clickedLang = e.target.attributes.getNamedItem('data-lang').value;
-  if (pathArray[0] === clickedLang) return;
-  return replaceLangDirectory(pathArray, clickedLang)
-}
-
-const replaceLangDirectory = (pathArray, clickedLang) => {
-  pathArray.splice(0, 1, `${clickedLang}`);
-  rebuildPathAndRedirect(pathArray);
-}
-
-const rebuildPathAndRedirect = (pathArray) => {
-  let newPath = ''
-  pathArray.forEach( (e, i) => {
-    newPath += '/';
-    newPath += pathArray[i];
-  });
-  window.location = newPath;
-}
-
 // TODO: Language link should be a component
-function languageLink(lang) {
-  function handleClick(e) {
-    e.preventDefault();
-    getLangs(e);
-  }
-  return (
-    <a href="#" onClick={handleClick} id='btn_' style={linkStyle} onClick={handleClick} data-lang={lang}>
-      {lang === 'en' ? 'English' : 'Chinese'}
-    </a>
-  )
-}
 
-const Header = ({ siteTitle }) => (
-  <div
+class Header extends React.Component{
+  constructor(props) {
+    super(props)
+    this.changeLanguage = this.changeLanguage.bind(this);
+    this.state = {
+      langToggle: false,
+      language: ''
+    }
+  }
+
+  getLangs() {
+    console.log(this.state)
+    if(this.state.langToggle) {
+      this.setState({langToggle: false});
+      let pathArray = location.pathname.split('/');
+      pathArray = pathArray.filter( (n) => n != "" ); //just get the actual directories
+      const clickedLang = this.state.language;
+      if (pathArray[0] === clickedLang) return;
+      return this.replaceLangDirectory({pathArray, clickedLang})
+    }
+  }
+  
+  replaceLangDirectory(pathArray) {
+    pathArray.pathArray.splice(0, 1, `${this.state.language}`);
+    this.rebuildPathAndRedirect(pathArray);
+  }
+  
+  rebuildPathAndRedirect(pathArray) {
+    let newPath = '';
+    pathArray.pathArray.forEach( (e) => {
+      newPath += '/';
+      newPath += e;
+    });
+    console.log('final', newPath)
+    window.location = newPath;
+  }
+
+  languageLink(lang) {
+    const handleClick = (e) => {
+      e.preventDefault();
+      this.setState({langToggle: true});
+      this.changeLanguage(e);
+    }
+    return (
+      <a href="#" onClick={handleClick} id='btn_' style={linkStyle} data-lang={lang}>
+        {lang === 'en' ? 'English' : 'Chinese'}
+      </a>
+    )
+  }
+
+  changeLanguage(e) {
+    const clickedLang = e.target.attributes.getNamedItem('data-lang').value;
+    this.setState({language: clickedLang});
+  }
+
+  componentDidUpdate() {
+    this.getLangs(this.state);
+  }
+
+  render() {
+    const { siteTitle } = this.props;
+    return (
+      <div
     style={{
       background: 'darkblue',
     }}
@@ -77,12 +105,14 @@ const Header = ({ siteTitle }) => (
         float: 'right',
         margin: '0'
       }}>
-        <li>{languageLink(`en`)}</li>
+        <li>{this.languageLink(`en`)}</li>
         <li style={linkStyle}>&nbsp; | &nbsp;</li>
-        <li>{languageLink(`cn`)}</li>
+        <li>{this.languageLink(`cn`)}</li>
       </ul>
     </div>
   </div>
-)
+    )
+  }
+}
 
 export default Header

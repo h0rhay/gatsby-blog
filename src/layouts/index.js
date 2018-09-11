@@ -6,8 +6,15 @@ import Header from '../components/header'
 import Nav from '../components/nav'
 import './index.css'
 
-const Layout = ({ children, data }) => (
-  <div>
+class Layout extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    const {children, data} = this.props;
+    return (
+      <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -28,7 +35,9 @@ const Layout = ({ children, data }) => (
       {children()}
     </div>
   </div>
-)
+    )
+  }
+}
 
 Layout.propTypes = {
   children: PropTypes.func,
