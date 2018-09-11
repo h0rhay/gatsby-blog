@@ -63,30 +63,30 @@ class Layout extends React.Component {
     const {children, data} = this.props;
     return (
       <div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    <Header 
-      siteTitle={data.site.siteMetadata.title} 
-      changeLanguage={this.changeLanguage.bind(this)}
-      toggleLanguageButtonState={this.toggleLanguageButtonState.bind(this)}
-    />
-    <Nav language={this.state.language}/>
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
-    </div>
-  </div>
+        <Helmet
+          title={data.site.siteMetadata.title}
+          meta={[
+            { name: 'description', content: 'Sample' },
+            { name: 'keywords', content: 'sample, something' },
+          ]}
+        />
+        <Header 
+          siteTitle={data.site.siteMetadata.title} 
+          changeLanguage={this.changeLanguage.bind(this)}
+          toggleLanguageButtonState={this.toggleLanguageButtonState.bind(this)}
+        />
+        <Nav language={this.state.language}/>
+        <div
+          style={{
+            margin: '0 auto',
+            maxWidth: 960,
+            padding: '0px 1.0875rem 1.45rem',
+            paddingTop: 0,
+          }}
+        >
+          {children()}
+        </div>
+      </div>
     )
   }
 }

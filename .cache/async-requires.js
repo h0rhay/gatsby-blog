@@ -19,9 +19,12 @@ exports.components = {
 
 exports.json = {
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/robinclark/sites/gatsby-blog/.cache/json/layout-index.json"),
+  "cn-post-1.json": require("gatsby-module-loader?name=path---cn-post-1!/Users/robinclark/sites/gatsby-blog/.cache/json/cn-post-1.json"),
+  "en-for-contributors.json": require("gatsby-module-loader?name=path---en-for-contributors!/Users/robinclark/sites/gatsby-blog/.cache/json/en-for-contributors.json"),
+  "cn-introduction.json": require("gatsby-module-loader?name=path---cn-introduction!/Users/robinclark/sites/gatsby-blog/.cache/json/cn-introduction.json"),
+  "en-glossary.json": require("gatsby-module-loader?name=path---en-glossary!/Users/robinclark/sites/gatsby-blog/.cache/json/en-glossary.json"),
   "en-post-1.json": require("gatsby-module-loader?name=path---en-post-1!/Users/robinclark/sites/gatsby-blog/.cache/json/en-post-1.json"),
   "en-post-2.json": require("gatsby-module-loader?name=path---en-post-2!/Users/robinclark/sites/gatsby-blog/.cache/json/en-post-2.json"),
-  "cn-post-1.json": require("gatsby-module-loader?name=path---cn-post-1!/Users/robinclark/sites/gatsby-blog/.cache/json/cn-post-1.json"),
   "dev-404-page.json": require("gatsby-module-loader?name=path---dev-404-page!/Users/robinclark/sites/gatsby-blog/.cache/json/dev-404-page.json"),
   "cn-404.json": require("gatsby-module-loader?name=path---cn-404!/Users/robinclark/sites/gatsby-blog/.cache/json/cn-404.json"),
   "cn-about.json": require("gatsby-module-loader?name=path---cn-about!/Users/robinclark/sites/gatsby-blog/.cache/json/cn-about.json"),
