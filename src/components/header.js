@@ -12,60 +12,20 @@ const linkStyle = {
 class Header extends React.Component{
   constructor(props) {
     super(props)
-    this.changeLanguage = this.changeLanguage.bind(this);
-    this.state = {
-      langToggle: false,
-      language: ''
-    }
-  }
-
-  getLangs() {
-    console.log(this.state)
-    if(this.state.langToggle) {
-      this.setState({langToggle: false});
-      let pathArray = location.pathname.split('/');
-      pathArray = pathArray.filter( (n) => n != "" ); //just get the actual directories
-      const clickedLang = this.state.language;
-      if (pathArray[0] === clickedLang) return;
-      return this.replaceLangDirectory({pathArray, clickedLang})
-    }
-  }
-  
-  replaceLangDirectory(pathArray) {
-    pathArray.pathArray.splice(0, 1, `${this.state.language}`);
-    this.rebuildPathAndRedirect(pathArray);
-  }
-  
-  rebuildPathAndRedirect(pathArray) {
-    let newPath = '';
-    pathArray.pathArray.forEach( (e) => {
-      newPath += '/';
-      newPath += e;
-    });
-    console.log('final', newPath)
-    window.location = newPath;
   }
 
   languageLink(lang) {
     const handleClick = (e) => {
       e.preventDefault();
-      this.setState({langToggle: true});
-      this.changeLanguage(e);
+      this.props.toggleLanguageButtonState();
+      const clickedLang = e.target.attributes.getNamedItem('data-lang').value;
+      this.props.changeLanguage(clickedLang);
     }
     return (
       <a href="#" onClick={handleClick} id='btn_' style={linkStyle} data-lang={lang}>
         {lang === 'en' ? 'English' : 'Chinese'}
       </a>
     )
-  }
-
-  changeLanguage(e) {
-    const clickedLang = e.target.attributes.getNamedItem('data-lang').value;
-    this.setState({language: clickedLang});
-  }
-
-  componentDidUpdate() {
-    this.getLangs(this.state);
   }
 
   render() {

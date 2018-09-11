@@ -4,11 +4,11 @@ import Link from 'gatsby-link'
 let lang = 'en'
 
 const setDefaultLanguage = (lang) => {
-  // Skip build, Browsers only
+  // Skip build, Browsers only (needed for running build command to deploy site)
   if (typeof window !== 'undefined') {
+    // Check below to only make en switch on initial site load
     let homePageCheck = window.location.pathname.split('/');
     homePageCheck = homePageCheck.filter( (n) => n != "" );
-    console.log(homePageCheck)
     if(homePageCheck.length < 1) window.location.href = `${window.location.href}${lang}`
   }
 }
