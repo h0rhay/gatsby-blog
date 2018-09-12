@@ -55,7 +55,6 @@ class Layout extends React.Component {
   }
 
   componentDidUpdate() {
-    console.log('cdu', this.state)
     this.getLangs();
   }
 
