@@ -77,12 +77,12 @@ class Layout extends React.Component {
           ]}
         />
         <Header 
+          data ={data}
           siteTitle={data.site.siteMetadata.title} 
           changeLanguage={this.changeLanguage.bind(this)}
           toggleLanguageButtonState={this.toggleLanguageButtonState.bind(this)}
         />
         <Nav language={this.state.language}/>
-        <Search data={data}/>
         <div
           style={{
             margin: '0 auto',

@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Search from './search'
 
 const linkStyle = {
   color: 'white',
@@ -41,6 +42,8 @@ class Header extends React.Component{
         margin: '0 auto',
         maxWidth: 960,
         padding: '1.45rem 1.0875rem',
+        display: 'flex',
+        justifyContent: 'space-between',
       }}
     >
       <h1 style={{ 
@@ -57,6 +60,7 @@ class Header extends React.Component{
           {siteTitle}
         </Link>
       </h1>
+      <Search {...this.props}/>
       <ul style={{
         listStyle: 'none',
         display: 'flex',

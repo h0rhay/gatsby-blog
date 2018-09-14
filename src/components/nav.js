@@ -22,8 +22,10 @@ class Navigation extends React.Component {
         <ul style={{
           listStyle: 'none',
           display: 'flex',
-          justifyContent: 'space-evenly',
-          paddingTop: '1em'
+          justifyContent: 'space-between',
+          paddingTop: '1em',
+          maxWidth: 960,
+          margin: '0 auto'
         }}>
           <li><Link to='/' style={linkStyle} >Home</Link></li>
           <li><Link to={ language ? `${language}/about` : `/en/about`} style={linkStyle} >About</Link></li>

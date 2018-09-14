@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Index} from 'elasticlunr';
+import Markdown from 'markdown-to-jsx';
 
 // Search component
 export default class Search extends Component {
@@ -14,13 +15,31 @@ export default class Search extends Component {
     render() {
       console.log('data',this.props)
         return (
-            <div>
+            <div
+            style={{
+              position: 'relative'
+            }}
+            >
                 <input type="text" value={this.state.query} onChange={this.search}/>
-                <ul>
+                <ul 
+                  style={{
+                    position: 'absolute',
+                    top: '2em',
+                    left: '-1.4em',
+                    listStyleType: 'none',
+                    background: '#e5e5e5',
+                    width: 500,                              
+                    opacity: 0.8,
+                    border: '1px solid darkgrey'
+                  }}
+                >
                     {this.state.results.map(page => (
-                        <li key={page.id}>
-                            <h4>{page.title}: <small>{page.keywords}</small></h4>
-                            <p>{page.excerpt}</p>
+                        <li key={page.id}
+                        >
+                            <h4 style={{margin:0}}>{page.title}: <small>{page.keywords}</small></h4>
+                            <Markdown options={{ forceInline: true }}>
+                              {page.excerpt}
+                            </Markdown>
                         </li>
                     ))}
                 </ul>
