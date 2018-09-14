@@ -1,9 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import { Index } from 'elasticlunr';
+
 
 import Header from '../components/header'
 import Nav from '../components/nav'
+import Search from '../components/search'
 import './index.css'
 
 class Layout extends React.Component {
@@ -11,7 +14,9 @@ class Layout extends React.Component {
     super(props)
     this.state = {
       langToggle: false,
-      language: ''
+      language: '',
+      query: ``,
+      results: []
     }
   }
 
@@ -58,8 +63,10 @@ class Layout extends React.Component {
     this.getLangs();
   }
 
+
   render() {
     const {children, data} = this.props;
+    console.log('1', Object.assign({}, this.props))
     return (
       <div>
         <Helmet
@@ -75,6 +82,7 @@ class Layout extends React.Component {
           toggleLanguageButtonState={this.toggleLanguageButtonState.bind(this)}
         />
         <Nav language={this.state.language}/>
+        <Search data={data}/>
         <div
           style={{
             margin: '0 auto',
@@ -96,12 +104,15 @@ Layout.propTypes = {
 
 export default Layout
 
+// Graphql query used to retrieve the serialized search index and siteTitle
 export const pageQuery = graphql`
-  query SiteTitleQuery {
+  query SearchIndexExampleQueryAndSiteTitleQuery {
     site {
       siteMetadata {
         title
       }
     }
-  }
-`
+    siteSearchIndex {
+      index
+    }
+  }`;

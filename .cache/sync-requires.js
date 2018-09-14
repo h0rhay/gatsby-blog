@@ -24,12 +24,12 @@ exports.components = {
 
 exports.json = {
   "layout-index.json": require("/Users/robinclark/sites/gatsby-blog/.cache/json/layout-index.json"),
-  "cn-post-1.json": require("/Users/robinclark/sites/gatsby-blog/.cache/json/cn-post-1.json"),
   "en-for-contributors.json": require("/Users/robinclark/sites/gatsby-blog/.cache/json/en-for-contributors.json"),
-  "cn-introduction.json": require("/Users/robinclark/sites/gatsby-blog/.cache/json/cn-introduction.json"),
   "en-glossary.json": require("/Users/robinclark/sites/gatsby-blog/.cache/json/en-glossary.json"),
-  "en-post-1.json": require("/Users/robinclark/sites/gatsby-blog/.cache/json/en-post-1.json"),
   "en-post-2.json": require("/Users/robinclark/sites/gatsby-blog/.cache/json/en-post-2.json"),
+  "cn-introduction.json": require("/Users/robinclark/sites/gatsby-blog/.cache/json/cn-introduction.json"),
+  "cn-post-1.json": require("/Users/robinclark/sites/gatsby-blog/.cache/json/cn-post-1.json"),
+  "en-post-1.json": require("/Users/robinclark/sites/gatsby-blog/.cache/json/en-post-1.json"),
   "dev-404-page.json": require("/Users/robinclark/sites/gatsby-blog/.cache/json/dev-404-page.json"),
   "cn-404.json": require("/Users/robinclark/sites/gatsby-blog/.cache/json/cn-404.json"),
   "cn-about.json": require("/Users/robinclark/sites/gatsby-blog/.cache/json/cn-about.json"),

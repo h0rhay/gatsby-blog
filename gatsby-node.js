@@ -10,6 +10,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       allMarkdownRemark {
         edges {
           node {
+            excerpt
             html
             id
             frontmatter {
@@ -18,8 +19,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               author
               date
               language
+              keywords
             }
-            excerpt
           }
         }
       }
@@ -29,7 +30,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     res.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
-        component: postTemplate
+        component: postTemplate,
       })
     })
   })

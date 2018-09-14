@@ -3,10 +3,13 @@ import Link from 'gatsby-link';
 import PageTransition from 'gatsby-plugin-page-transitions'
 
 const getLanguage = () => {
-  let lang = location.pathname.split('/');
-  lang = lang.filter( (n) => n != "" ); //strip unwanted
-  lang = lang[0]; // 1st one is language
-  return lang;
+  // Skip build, Browsers only
+  if (typeof window !== 'undefined') {
+    let lang = location.pathname.split('/');
+    lang = lang.filter( (n) => n != "" ); //strip unwanted
+    lang = lang[0]; // 1st one is language
+    return lang;
+  }
 }
 
 const BlogPost = ({data}) => {
@@ -14,7 +17,6 @@ const BlogPost = ({data}) => {
   return (
     <PageTransition>
       <div>
-        
         <Link to={`/${getLanguage()}/docs`}>{`< `}Go back</Link>
         <hr/>
         <h1>{post.frontmatter.title}</h1>

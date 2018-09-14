@@ -16,7 +16,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "aa0082fe793ac5c797666ff770972c9f",
+        "contentDigest": "51970ba33e4e1984d572dccd7df9dc02",
         "description": "Plugin dev-404-page",
         "owner": "internal-data-bridge"
       }
@@ -423,113 +423,14 @@
         "owner": "internal-data-bridge"
       }
     },
-    "Plugin gatsby-source-filesystem": {
-      "resolve": "/Users/robinclark/sites/gatsby-blog/node_modules/gatsby-source-filesystem",
-      "id": "Plugin gatsby-source-filesystem",
-      "name": "gatsby-source-filesystem",
-      "version": "1.5.39",
-      "pluginOptions": {
-        "plugins": [],
-        "path": "/Users/robinclark/sites/gatsby-blog/src/pages/",
-        "name": "docs"
-      },
-      "nodeAPIs": [
-        "sourceNodes",
-        "setFieldsOnGraphQLNodeType"
-      ],
-      "browserAPIs": [],
-      "ssrAPIs": [],
-      "pluginFilepath": "/Users/robinclark/sites/gatsby-blog/node_modules/gatsby-source-filesystem",
-      "packageJson": {
-        "name": "gatsby-source-filesystem",
-        "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
-        "version": "1.5.39",
-        "keywords": [
-          "gatsby",
-          "gatsby-plugin"
-        ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-        "license": "MIT",
-        "dependencies": [
-          {
-            "name": "babel-cli",
-            "version": "^6.26.0"
-          },
-          {
-            "name": "babel-runtime",
-            "version": "^6.26.0"
-          },
-          {
-            "name": "better-queue",
-            "version": "^3.8.7"
-          },
-          {
-            "name": "bluebird",
-            "version": "^3.5.0"
-          },
-          {
-            "name": "chokidar",
-            "version": "^1.7.0"
-          },
-          {
-            "name": "fs-extra",
-            "version": "^4.0.1"
-          },
-          {
-            "name": "got",
-            "version": "^7.1.0"
-          },
-          {
-            "name": "md5-file",
-            "version": "^3.1.1"
-          },
-          {
-            "name": "mime",
-            "version": "^1.3.6"
-          },
-          {
-            "name": "pretty-bytes",
-            "version": "^4.0.2"
-          },
-          {
-            "name": "slash",
-            "version": "^1.0.0"
-          },
-          {
-            "name": "valid-url",
-            "version": "^1.0.9"
-          }
-        ],
-        "devDependencies": [
-          {
-            "name": "cross-env",
-            "version": "^5.0.5"
-          }
-        ],
-        "peerDependencies": [
-          {
-            "name": "gatsby",
-            "version": "^1.9.250"
-          }
-        ],
-        "optionalDependecies": [],
-        "bundledDependecies": []
-      },
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "contentDigest": "135dcf7a5cd5bb3a77540aa7b6d36ce5",
-        "type": "SitePlugin",
-        "owner": "internal-data-bridge"
-      }
-    },
     "Plugin gatsby-transformer-remark": {
       "resolve": "/Users/robinclark/sites/gatsby-blog/node_modules/gatsby-transformer-remark",
       "id": "Plugin gatsby-transformer-remark",
       "name": "gatsby-transformer-remark",
       "version": "1.7.44",
       "pluginOptions": {
-        "plugins": []
+        "plugins": [],
+        "excerpt_separator": "<!-- end -->"
       },
       "nodeAPIs": [
         "onCreateNode",
@@ -653,7 +554,197 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "3a3ee1e4382b0cb7e8b549023e657bf9",
+        "contentDigest": "f1cd84ae48b9e9022406804f48bf91b3",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-source-filesystem": {
+      "resolve": "/Users/robinclark/sites/gatsby-blog/node_modules/gatsby-source-filesystem",
+      "id": "Plugin gatsby-source-filesystem",
+      "name": "gatsby-source-filesystem",
+      "version": "1.5.39",
+      "pluginOptions": {
+        "plugins": [],
+        "path": "/Users/robinclark/sites/gatsby-blog/src/pages/",
+        "name": "docs"
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/robinclark/sites/gatsby-blog/node_modules/gatsby-source-filesystem",
+      "packageJson": {
+        "name": "gatsby-source-filesystem",
+        "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
+        "version": "1.5.39",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "better-queue",
+            "version": "^3.8.7"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.1"
+          },
+          {
+            "name": "got",
+            "version": "^7.1.0"
+          },
+          {
+            "name": "md5-file",
+            "version": "^3.1.1"
+          },
+          {
+            "name": "mime",
+            "version": "^1.3.6"
+          },
+          {
+            "name": "pretty-bytes",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "valid-url",
+            "version": "^1.0.9"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.9.250"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "135dcf7a5cd5bb3a77540aa7b6d36ce5",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin @andrew-codes/gatsby-plugin-elasticlunr-search": {
+      "resolve": "/Users/robinclark/sites/gatsby-blog/node_modules/@andrew-codes/gatsby-plugin-elasticlunr-search",
+      "id": "Plugin @andrew-codes/gatsby-plugin-elasticlunr-search",
+      "name": "@andrew-codes/gatsby-plugin-elasticlunr-search",
+      "version": "1.0.4",
+      "pluginOptions": {
+        "plugins": [],
+        "fields": [
+          "title",
+          "keywords",
+          "excerpt"
+        ],
+        "resolvers": {
+          "MarkdownRemark": {}
+        }
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/robinclark/sites/gatsby-blog/node_modules/@andrew-codes/gatsby-plugin-elasticlunr-search",
+      "packageJson": {
+        "name": "@andrew-codes/gatsby-plugin-elasticlunr-search",
+        "description": "Search for gatsby; implemented via elastic lunr.",
+        "version": "1.0.4",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "lunr",
+          "search",
+          "elastic lunr"
+        ],
+        "author": "Andrew Smith <andrew@andrew.codes>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "elasticlunr",
+            "version": "^0.9.5"
+          },
+          {
+            "name": "graphql",
+            "version": "^0.11.7"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0-beta.32"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0-beta.32"
+          },
+          {
+            "name": "@babel/plugin-proposal-object-rest-spread",
+            "version": "^7.0.0-beta.32"
+          },
+          {
+            "name": "@babel/preset-env",
+            "version": "^7.0.0-beta.32"
+          },
+          {
+            "name": "eslint",
+            "version": "^4.12.1"
+          },
+          {
+            "name": "nps",
+            "version": "^5.7.1"
+          },
+          {
+            "name": "nps-utils",
+            "version": "^1.5.0"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "491b786e57c31927bbe2f6180557dee7",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -662,7 +753,7 @@
       "resolve": "/Users/robinclark/sites/gatsby-blog",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "4609dd5292d316d151c96f7cf02fdae6",
+      "version": "cc73eee0979256ab42e1bbcf8afdbeea",
       "pluginOptions": {
         "plugins": []
       },
@@ -682,6 +773,10 @@
         "author": "Kyle Mathews <mathews.kyle@gmail.com>",
         "license": "MIT",
         "dependencies": [
+          {
+            "name": "elasticlunr",
+            "version": "^0.9.5"
+          },
           {
             "name": "gatsby",
             "version": "^1.9.277"
@@ -717,6 +812,10 @@
         ],
         "devDependencies": [
           {
+            "name": "@andrew-codes/gatsby-plugin-elasticlunr-search",
+            "version": "^1.0.4"
+          },
+          {
             "name": "prettier",
             "version": "^1.13.7"
           }
@@ -728,7 +827,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "561447cbd0faabda444ee7d2a6ec7d61",
+        "contentDigest": "276e46e9561378fbe425cebbc9a24216",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -816,16 +915,16 @@
       "siteMetadata": {
         "title": "Cardano Docs"
       },
-      "port": 8001,
+      "port": "8000",
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-09-12T17:57:45.416Z",
+      "buildTime": "2018-09-14T12:32:09.123Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "1d28dbe1a8d429d3579fdc3f5c4f1554",
+        "contentDigest": "793c80ef3ad1b50b6506e5a20ba44f95",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -835,7 +934,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "9c07384ec3249b7126e38887d95f1c95",
+        "contentDigest": "4000b8904a826672fb2666d60034cdc8",
         "type": "Directory",
         "description": "Directory \"src/pages\"",
         "owner": "gatsby-source-filesystem"
@@ -847,7 +946,7 @@
       "size": 192,
       "prettySize": "192 B",
       "modifiedTime": "2018-09-07T13:26:40.488Z",
-      "accessTime": "2018-09-12T17:58:05.500Z",
+      "accessTime": "2018-09-14T12:32:11.639Z",
       "changeTime": "2018-09-10T12:46:52.971Z",
       "birthTime": "2018-09-06T16:31:48.369Z",
       "root": "/",
@@ -865,11 +964,11 @@
       "blksize": 4194304,
       "ino": 12932795,
       "blocks": 0,
-      "atimeMs": 1536775085499.6377,
+      "atimeMs": 1536928331639.2485,
       "mtimeMs": 1536326800487.6865,
       "ctimeMs": 1536583612971.0093,
       "birthtimeMs": 1536251508369.3958,
-      "atime": "2018-09-12T17:58:05.500Z",
+      "atime": "2018-09-14T12:32:11.639Z",
       "mtime": "2018-09-07T13:26:40.488Z",
       "ctime": "2018-09-10T12:46:52.971Z",
       "birthtime": "2018-09-06T16:31:48.369Z"
@@ -879,7 +978,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "99ba66ef35a49b9fc6fffd992f607610",
+        "contentDigest": "9eecbbfb088c8ff09eb34b42e3de2b39",
         "type": "Directory",
         "description": "Directory \"src/pages/cn\"",
         "owner": "gatsby-source-filesystem"
@@ -891,7 +990,7 @@
       "size": 256,
       "prettySize": "256 B",
       "modifiedTime": "2018-09-11T14:46:24.825Z",
-      "accessTime": "2018-09-12T17:58:05.502Z",
+      "accessTime": "2018-09-14T12:32:11.641Z",
       "changeTime": "2018-09-11T14:46:24.825Z",
       "birthTime": "2018-09-06T17:41:54.752Z",
       "root": "/",
@@ -909,11 +1008,11 @@
       "blksize": 4194304,
       "ino": 12932797,
       "blocks": 0,
-      "atimeMs": 1536775085501.9167,
+      "atimeMs": 1536928331641.3184,
       "mtimeMs": 1536677184824.535,
       "ctimeMs": 1536677184824.535,
       "birthtimeMs": 1536255714752.3416,
-      "atime": "2018-09-12T17:58:05.502Z",
+      "atime": "2018-09-14T12:32:11.641Z",
       "mtime": "2018-09-11T14:46:24.825Z",
       "ctime": "2018-09-11T14:46:24.825Z",
       "birthtime": "2018-09-06T17:41:54.752Z"
@@ -923,7 +1022,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "be18de02b58cf3d6211135eb9d858ab9",
+        "contentDigest": "0df4a77cb5c6fc8fa5aa824afb708658",
         "type": "Directory",
         "description": "Directory \"src/pages/en\"",
         "owner": "gatsby-source-filesystem"
@@ -934,9 +1033,9 @@
       "extension": "",
       "size": 256,
       "prettySize": "256 B",
-      "modifiedTime": "2018-09-11T14:46:24.827Z",
-      "accessTime": "2018-09-12T17:58:05.502Z",
-      "changeTime": "2018-09-11T14:46:24.827Z",
+      "modifiedTime": "2018-09-14T11:14:21.872Z",
+      "accessTime": "2018-09-14T12:32:11.641Z",
+      "changeTime": "2018-09-14T11:14:21.872Z",
       "birthTime": "2018-09-06T17:41:44.104Z",
       "root": "/",
       "dir": "/Users/robinclark/sites/gatsby-blog/src/pages",
@@ -953,65 +1052,21 @@
       "blksize": 4194304,
       "ino": 12932806,
       "blocks": 0,
-      "atimeMs": 1536775085501.9438,
-      "mtimeMs": 1536677184826.7932,
-      "ctimeMs": 1536677184826.7932,
+      "atimeMs": 1536928331641.313,
+      "mtimeMs": 1536923661872.2449,
+      "ctimeMs": 1536923661872.2449,
       "birthtimeMs": 1536255704104.3481,
-      "atime": "2018-09-12T17:58:05.502Z",
-      "mtime": "2018-09-11T14:46:24.827Z",
-      "ctime": "2018-09-11T14:46:24.827Z",
+      "atime": "2018-09-14T12:32:11.641Z",
+      "mtime": "2018-09-14T11:14:21.872Z",
+      "ctime": "2018-09-14T11:14:21.872Z",
       "birthtime": "2018-09-06T17:41:44.104Z"
-    },
-    "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs absPath of file": {
-      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs absPath of file",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "98b24e48bb570f01e8ef6e1aaec5808e",
-        "type": "Directory",
-        "description": "Directory \"src/pages/cn/docs\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "docs",
-      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs",
-      "relativePath": "cn/docs",
-      "extension": "",
-      "size": 160,
-      "prettySize": "160 B",
-      "modifiedTime": "2018-09-11T14:51:39.354Z",
-      "accessTime": "2018-09-12T17:58:05.503Z",
-      "changeTime": "2018-09-11T14:51:39.354Z",
-      "birthTime": "2018-09-07T13:22:25.417Z",
-      "root": "/",
-      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/cn",
-      "base": "docs",
-      "ext": "",
-      "name": "docs",
-      "relativeDirectory": "cn",
-      "dev": 16777220,
-      "mode": 16877,
-      "nlink": 5,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 12932802,
-      "blocks": 0,
-      "atimeMs": 1536775085503.4578,
-      "mtimeMs": 1536677499354.1313,
-      "ctimeMs": 1536677499354.1313,
-      "birthtimeMs": 1536326545416.8994,
-      "atime": "2018-09-12T17:58:05.503Z",
-      "mtime": "2018-09-11T14:51:39.354Z",
-      "ctime": "2018-09-11T14:51:39.354Z",
-      "birthtime": "2018-09-07T13:22:25.417Z"
     },
     "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs absPath of file": {
       "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "87058b90b8230001685937f4624c6b76",
+        "contentDigest": "aa1bf854c82f316411140d77de78c0aa",
         "type": "Directory",
         "description": "Directory \"src/pages/en/docs\"",
         "owner": "gatsby-source-filesystem"
@@ -1022,9 +1077,9 @@
       "extension": "",
       "size": 224,
       "prettySize": "224 B",
-      "modifiedTime": "2018-09-11T14:46:24.828Z",
-      "accessTime": "2018-09-12T17:58:05.503Z",
-      "changeTime": "2018-09-11T14:46:24.828Z",
+      "modifiedTime": "2018-09-14T11:14:21.879Z",
+      "accessTime": "2018-09-14T12:32:11.643Z",
+      "changeTime": "2018-09-14T11:14:21.879Z",
       "birthTime": "2018-09-07T13:22:39.911Z",
       "root": "/",
       "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/en",
@@ -1041,14 +1096,58 @@
       "blksize": 4194304,
       "ino": 12932811,
       "blocks": 0,
-      "atimeMs": 1536775085503.415,
-      "mtimeMs": 1536677184828.4148,
-      "ctimeMs": 1536677184828.4148,
+      "atimeMs": 1536928331642.8223,
+      "mtimeMs": 1536923661879.3367,
+      "ctimeMs": 1536923661879.3367,
       "birthtimeMs": 1536326559910.9746,
-      "atime": "2018-09-12T17:58:05.503Z",
-      "mtime": "2018-09-11T14:46:24.828Z",
-      "ctime": "2018-09-11T14:46:24.828Z",
+      "atime": "2018-09-14T12:32:11.643Z",
+      "mtime": "2018-09-14T11:14:21.879Z",
+      "ctime": "2018-09-14T11:14:21.879Z",
       "birthtime": "2018-09-07T13:22:39.911Z"
+    },
+    "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs absPath of file": {
+      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "d5519b6bad099486537b1cfe7d2d1e18",
+        "type": "Directory",
+        "description": "Directory \"src/pages/cn/docs\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "docs",
+      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs",
+      "relativePath": "cn/docs",
+      "extension": "",
+      "size": 160,
+      "prettySize": "160 B",
+      "modifiedTime": "2018-09-14T11:14:21.871Z",
+      "accessTime": "2018-09-14T12:32:11.643Z",
+      "changeTime": "2018-09-14T11:14:21.871Z",
+      "birthTime": "2018-09-07T13:22:25.417Z",
+      "root": "/",
+      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/cn",
+      "base": "docs",
+      "ext": "",
+      "name": "docs",
+      "relativeDirectory": "cn",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 5,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 12932802,
+      "blocks": 0,
+      "atimeMs": 1536928331642.8442,
+      "mtimeMs": 1536923661870.579,
+      "ctimeMs": 1536923661870.579,
+      "birthtimeMs": 1536326545416.8994,
+      "atime": "2018-09-14T12:32:11.643Z",
+      "mtime": "2018-09-14T11:14:21.871Z",
+      "ctime": "2018-09-14T11:14:21.871Z",
+      "birthtime": "2018-09-07T13:22:25.417Z"
     },
     "/Users/robinclark/sites/gatsby-blog/src/pages/.DS_Store absPath of file": {
       "id": "/Users/robinclark/sites/gatsby-blog/src/pages/.DS_Store absPath of file",
@@ -1068,7 +1167,7 @@
       "size": 6148,
       "prettySize": "6.15 kB",
       "modifiedTime": "2018-09-07T13:21:54.650Z",
-      "accessTime": "2018-09-11T15:01:34.473Z",
+      "accessTime": "2018-09-14T12:32:11.639Z",
       "changeTime": "2018-09-10T12:46:52.962Z",
       "birthTime": "2018-09-07T13:21:54.649Z",
       "root": "/",
@@ -1086,14 +1185,59 @@
       "blksize": 4194304,
       "ino": 12932796,
       "blocks": 16,
-      "atimeMs": 1536678094472.8997,
+      "atimeMs": 1536928331639.4968,
       "mtimeMs": 1536326514649.5483,
       "ctimeMs": 1536583612962.2476,
       "birthtimeMs": 1536326514648.902,
-      "atime": "2018-09-11T15:01:34.473Z",
+      "atime": "2018-09-14T12:32:11.639Z",
       "mtime": "2018-09-07T13:21:54.650Z",
       "ctime": "2018-09-10T12:46:52.962Z",
       "birthtime": "2018-09-07T13:21:54.649Z"
+    },
+    "/Users/robinclark/sites/gatsby-blog/src/pages/en/404.js absPath of file": {
+      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/404.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "1aeca0de66be56d3f03f3784a5c03d0a",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "description": "File \"src/pages/en/404.js\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "docs",
+      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/en/404.js",
+      "relativePath": "en/404.js",
+      "extension": "js",
+      "size": 305,
+      "prettySize": "305 B",
+      "modifiedTime": "2018-09-13T12:43:52.126Z",
+      "accessTime": "2018-09-14T12:31:57.982Z",
+      "changeTime": "2018-09-13T12:43:52.126Z",
+      "birthTime": "2018-09-06T16:31:48.369Z",
+      "root": "/",
+      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/en",
+      "base": "404.js",
+      "ext": ".js",
+      "name": "404",
+      "relativeDirectory": "en",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 12932809,
+      "blocks": 8,
+      "atimeMs": 1536928317982.032,
+      "mtimeMs": 1536842632125.947,
+      "ctimeMs": 1536842632125.947,
+      "birthtimeMs": 1536251508369.4536,
+      "atime": "2018-09-14T12:31:57.982Z",
+      "mtime": "2018-09-13T12:43:52.126Z",
+      "ctime": "2018-09-13T12:43:52.126Z",
+      "birthtime": "2018-09-06T16:31:48.369Z"
     },
     "/Users/robinclark/sites/gatsby-blog/src/pages/index.js absPath of file": {
       "id": "/Users/robinclark/sites/gatsby-blog/src/pages/index.js absPath of file",
@@ -1113,7 +1257,7 @@
       "size": 786,
       "prettySize": "786 B",
       "modifiedTime": "2018-09-12T08:30:58.598Z",
-      "accessTime": "2018-09-12T08:30:58.614Z",
+      "accessTime": "2018-09-14T12:31:57.982Z",
       "changeTime": "2018-09-12T08:30:58.598Z",
       "birthTime": "2018-09-07T13:26:40.488Z",
       "root": "/",
@@ -1131,194 +1275,14 @@
       "blksize": 4194304,
       "ino": 12932805,
       "blocks": 8,
-      "atimeMs": 1536741058614.4893,
+      "atimeMs": 1536928317982.18,
       "mtimeMs": 1536741058598.3774,
       "ctimeMs": 1536741058598.3774,
       "birthtimeMs": 1536326800487.6711,
-      "atime": "2018-09-12T08:30:58.614Z",
+      "atime": "2018-09-14T12:31:57.982Z",
       "mtime": "2018-09-12T08:30:58.598Z",
       "ctime": "2018-09-12T08:30:58.598Z",
       "birthtime": "2018-09-07T13:26:40.488Z"
-    },
-    "/Users/robinclark/sites/gatsby-blog/src/pages/cn/404.js absPath of file": {
-      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/404.js absPath of file",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "8e2883d6d56ea855434d40777a5835f2",
-        "mediaType": "application/javascript",
-        "type": "File",
-        "description": "File \"src/pages/cn/404.js\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "docs",
-      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/404.js",
-      "relativePath": "cn/404.js",
-      "extension": "js",
-      "size": 312,
-      "prettySize": "312 B",
-      "modifiedTime": "2018-09-11T15:23:29.651Z",
-      "accessTime": "2018-09-11T15:41:24.286Z",
-      "changeTime": "2018-09-11T15:23:29.651Z",
-      "birthTime": "2018-09-06T16:31:48.369Z",
-      "root": "/",
-      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/cn",
-      "base": "404.js",
-      "ext": ".js",
-      "name": "404",
-      "relativeDirectory": "cn",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 12932800,
-      "blocks": 8,
-      "atimeMs": 1536680484286.042,
-      "mtimeMs": 1536679409651.2957,
-      "ctimeMs": 1536679409651.2957,
-      "birthtimeMs": 1536251508369.4536,
-      "atime": "2018-09-11T15:41:24.286Z",
-      "mtime": "2018-09-11T15:23:29.651Z",
-      "ctime": "2018-09-11T15:23:29.651Z",
-      "birthtime": "2018-09-06T16:31:48.369Z"
-    },
-    "/Users/robinclark/sites/gatsby-blog/src/pages/cn/contact.js absPath of file": {
-      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/contact.js absPath of file",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "c00fb90d634cdde57ac397f823b5f7ea",
-        "mediaType": "application/javascript",
-        "type": "File",
-        "description": "File \"src/pages/cn/contact.js\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "docs",
-      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/contact.js",
-      "relativePath": "cn/contact.js",
-      "extension": "js",
-      "size": 706,
-      "prettySize": "706 B",
-      "modifiedTime": "2018-09-11T15:24:05.966Z",
-      "accessTime": "2018-09-11T15:41:24.286Z",
-      "changeTime": "2018-09-11T15:24:05.966Z",
-      "birthTime": "2018-09-06T17:21:50.611Z",
-      "root": "/",
-      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/cn",
-      "base": "contact.js",
-      "ext": ".js",
-      "name": "contact",
-      "relativeDirectory": "cn",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 12932804,
-      "blocks": 8,
-      "atimeMs": 1536680484286.0564,
-      "mtimeMs": 1536679445965.7893,
-      "ctimeMs": 1536679445965.7893,
-      "birthtimeMs": 1536254510610.7654,
-      "atime": "2018-09-11T15:41:24.286Z",
-      "mtime": "2018-09-11T15:24:05.966Z",
-      "ctime": "2018-09-11T15:24:05.966Z",
-      "birthtime": "2018-09-06T17:21:50.611Z"
-    },
-    "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs.js absPath of file": {
-      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs.js absPath of file",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "0ea5e3b5ba4922df7e93b694c4b553e5",
-        "mediaType": "application/javascript",
-        "type": "File",
-        "description": "File \"src/pages/cn/docs.js\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "docs",
-      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs.js",
-      "relativePath": "cn/docs.js",
-      "extension": "js",
-      "size": 1349,
-      "prettySize": "1.35 kB",
-      "modifiedTime": "2018-09-11T15:24:26.521Z",
-      "accessTime": "2018-09-11T15:41:24.286Z",
-      "changeTime": "2018-09-11T15:24:26.521Z",
-      "birthTime": "2018-09-11T14:46:24.825Z",
-      "root": "/",
-      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/cn",
-      "base": "docs.js",
-      "ext": ".js",
-      "name": "docs",
-      "relativeDirectory": "cn",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 13030095,
-      "blocks": 8,
-      "atimeMs": 1536680484286.0625,
-      "mtimeMs": 1536679466520.953,
-      "ctimeMs": 1536679466520.953,
-      "birthtimeMs": 1536677184824.5261,
-      "atime": "2018-09-11T15:41:24.286Z",
-      "mtime": "2018-09-11T15:24:26.521Z",
-      "ctime": "2018-09-11T15:24:26.521Z",
-      "birthtime": "2018-09-11T14:46:24.825Z"
-    },
-    "/Users/robinclark/sites/gatsby-blog/src/pages/en/404.js absPath of file": {
-      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/404.js absPath of file",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "1aeca0de66be56d3f03f3784a5c03d0a",
-        "mediaType": "application/javascript",
-        "type": "File",
-        "description": "File \"src/pages/en/404.js\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "docs",
-      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/en/404.js",
-      "relativePath": "en/404.js",
-      "extension": "js",
-      "size": 305,
-      "prettySize": "305 B",
-      "modifiedTime": "2018-09-11T15:23:05.833Z",
-      "accessTime": "2018-09-11T15:41:24.286Z",
-      "changeTime": "2018-09-11T15:23:05.833Z",
-      "birthTime": "2018-09-06T16:31:48.369Z",
-      "root": "/",
-      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/en",
-      "base": "404.js",
-      "ext": ".js",
-      "name": "404",
-      "relativeDirectory": "en",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 12932809,
-      "blocks": 8,
-      "atimeMs": 1536680484286.0996,
-      "mtimeMs": 1536679385832.7131,
-      "ctimeMs": 1536679385832.7131,
-      "birthtimeMs": 1536251508369.4536,
-      "atime": "2018-09-11T15:41:24.286Z",
-      "mtime": "2018-09-11T15:23:05.833Z",
-      "ctime": "2018-09-11T15:23:05.833Z",
-      "birthtime": "2018-09-06T16:31:48.369Z"
     },
     "/Users/robinclark/sites/gatsby-blog/src/pages/en/about.js absPath of file": {
       "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/about.js absPath of file",
@@ -1337,9 +1301,9 @@
       "extension": "js",
       "size": 475,
       "prettySize": "475 B",
-      "modifiedTime": "2018-09-11T15:03:23.677Z",
-      "accessTime": "2018-09-11T15:41:24.286Z",
-      "changeTime": "2018-09-11T15:03:23.677Z",
+      "modifiedTime": "2018-09-13T12:43:48.625Z",
+      "accessTime": "2018-09-14T12:31:57.982Z",
+      "changeTime": "2018-09-13T12:43:48.625Z",
       "birthTime": "2018-09-06T17:09:25.662Z",
       "root": "/",
       "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/en",
@@ -1356,13 +1320,13 @@
       "blksize": 4194304,
       "ino": 12932807,
       "blocks": 8,
-      "atimeMs": 1536680484286.106,
-      "mtimeMs": 1536678203676.9282,
-      "ctimeMs": 1536678203676.9282,
+      "atimeMs": 1536928317982.0361,
+      "mtimeMs": 1536842628625.0923,
+      "ctimeMs": 1536842628625.0923,
       "birthtimeMs": 1536253765661.8696,
-      "atime": "2018-09-11T15:41:24.286Z",
-      "mtime": "2018-09-11T15:03:23.677Z",
-      "ctime": "2018-09-11T15:03:23.677Z",
+      "atime": "2018-09-14T12:31:57.982Z",
+      "mtime": "2018-09-13T12:43:48.625Z",
+      "ctime": "2018-09-13T12:43:48.625Z",
       "birthtime": "2018-09-06T17:09:25.662Z"
     },
     "/Users/robinclark/sites/gatsby-blog/src/pages/en/contact.js absPath of file": {
@@ -1382,9 +1346,9 @@
       "extension": "js",
       "size": 699,
       "prettySize": "699 B",
-      "modifiedTime": "2018-09-11T15:04:22.347Z",
-      "accessTime": "2018-09-11T15:41:24.286Z",
-      "changeTime": "2018-09-11T15:04:22.347Z",
+      "modifiedTime": "2018-09-13T12:43:44.466Z",
+      "accessTime": "2018-09-14T12:31:57.982Z",
+      "changeTime": "2018-09-13T12:43:44.466Z",
       "birthTime": "2018-09-06T17:21:50.611Z",
       "root": "/",
       "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/en",
@@ -1401,13 +1365,13 @@
       "blksize": 4194304,
       "ino": 12932814,
       "blocks": 8,
-      "atimeMs": 1536680484286.113,
-      "mtimeMs": 1536678262347.331,
-      "ctimeMs": 1536678262347.331,
+      "atimeMs": 1536928317982.0405,
+      "mtimeMs": 1536842624465.712,
+      "ctimeMs": 1536842624465.712,
       "birthtimeMs": 1536254510610.7654,
-      "atime": "2018-09-11T15:41:24.286Z",
-      "mtime": "2018-09-11T15:04:22.347Z",
-      "ctime": "2018-09-11T15:04:22.347Z",
+      "atime": "2018-09-14T12:31:57.982Z",
+      "mtime": "2018-09-13T12:43:44.466Z",
+      "ctime": "2018-09-13T12:43:44.466Z",
       "birthtime": "2018-09-06T17:21:50.611Z"
     },
     "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs.js absPath of file": {
@@ -1415,7 +1379,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "70e9ebe838de9d33261e055e69d8f037",
+        "contentDigest": "c341fda47137726080a9fa3cdc7f4ac6",
         "mediaType": "application/javascript",
         "type": "File",
         "description": "File \"src/pages/en/docs.js\"",
@@ -1427,10 +1391,10 @@
       "extension": "js",
       "size": 1341,
       "prettySize": "1.34 kB",
-      "modifiedTime": "2018-09-11T15:04:54.966Z",
-      "accessTime": "2018-09-11T15:41:24.286Z",
-      "changeTime": "2018-09-11T15:04:54.966Z",
-      "birthTime": "2018-09-11T14:46:24.827Z",
+      "modifiedTime": "2018-09-14T11:14:21.873Z",
+      "accessTime": "2018-09-14T12:32:05.431Z",
+      "changeTime": "2018-09-14T11:14:21.873Z",
+      "birthTime": "2018-09-14T11:14:21.872Z",
       "root": "/",
       "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/en",
       "base": "docs.js",
@@ -1444,16 +1408,16 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 13030097,
+      "ino": 13251485,
       "blocks": 8,
-      "atimeMs": 1536680484286.12,
-      "mtimeMs": 1536678294965.5278,
-      "ctimeMs": 1536678294965.5278,
-      "birthtimeMs": 1536677184826.7854,
-      "atime": "2018-09-11T15:41:24.286Z",
-      "mtime": "2018-09-11T15:04:54.966Z",
-      "ctime": "2018-09-11T15:04:54.966Z",
-      "birthtime": "2018-09-11T14:46:24.827Z"
+      "atimeMs": 1536928325431.1316,
+      "mtimeMs": 1536923661872.7893,
+      "ctimeMs": 1536923661872.7893,
+      "birthtimeMs": 1536923661872.2332,
+      "atime": "2018-09-14T12:32:05.431Z",
+      "mtime": "2018-09-14T11:14:21.873Z",
+      "ctime": "2018-09-14T11:14:21.873Z",
+      "birthtime": "2018-09-14T11:14:21.872Z"
     },
     "/Users/robinclark/sites/gatsby-blog/src/pages/en/index.js absPath of file": {
       "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/index.js absPath of file",
@@ -1472,9 +1436,9 @@
       "extension": "js",
       "size": 417,
       "prettySize": "417 B",
-      "modifiedTime": "2018-09-11T15:02:59.387Z",
-      "accessTime": "2018-09-11T15:41:24.286Z",
-      "changeTime": "2018-09-11T15:02:59.387Z",
+      "modifiedTime": "2018-09-13T12:43:30.336Z",
+      "accessTime": "2018-09-14T12:31:57.982Z",
+      "changeTime": "2018-09-13T12:43:30.336Z",
       "birthTime": "2018-09-06T16:31:48.370Z",
       "root": "/",
       "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/en",
@@ -1491,227 +1455,41 @@
       "blksize": 4194304,
       "ino": 12932810,
       "blocks": 8,
-      "atimeMs": 1536680484286.148,
-      "mtimeMs": 1536678179387.276,
-      "ctimeMs": 1536678179387.276,
+      "atimeMs": 1536928317982.1758,
+      "mtimeMs": 1536842610335.9976,
+      "ctimeMs": 1536842610335.9976,
       "birthtimeMs": 1536251508370.0605,
-      "atime": "2018-09-11T15:41:24.286Z",
-      "mtime": "2018-09-11T15:02:59.387Z",
-      "ctime": "2018-09-11T15:02:59.387Z",
+      "atime": "2018-09-14T12:31:57.982Z",
+      "mtime": "2018-09-13T12:43:30.336Z",
+      "ctime": "2018-09-13T12:43:30.336Z",
       "birthtime": "2018-09-06T16:31:48.370Z"
     },
-    "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/.DS_Store absPath of file": {
-      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/.DS_Store absPath of file",
+    "/Users/robinclark/sites/gatsby-blog/src/pages/cn/404.js absPath of file": {
+      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/404.js absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "194577a7e20bdcc7afbb718f502c134c",
-        "mediaType": "application/octet-stream",
-        "type": "File",
-        "description": "File \"src/pages/cn/docs/.DS_Store\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "docs",
-      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/.DS_Store",
-      "relativePath": "cn/docs/.DS_Store",
-      "extension": "",
-      "size": 6148,
-      "prettySize": "6.15 kB",
-      "modifiedTime": "2018-09-11T14:40:41.068Z",
-      "accessTime": "2018-09-11T15:01:34.476Z",
-      "changeTime": "2018-09-11T14:40:41.068Z",
-      "birthTime": "2018-09-11T14:26:07.872Z",
-      "root": "/",
-      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs",
-      "base": ".DS_Store",
-      "ext": "",
-      "name": ".DS_Store",
-      "relativeDirectory": "cn/docs",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 13028969,
-      "blocks": 16,
-      "atimeMs": 1536678094475.804,
-      "mtimeMs": 1536676841068.0037,
-      "ctimeMs": 1536676841068.0037,
-      "birthtimeMs": 1536675967872.4858,
-      "atime": "2018-09-11T15:01:34.476Z",
-      "mtime": "2018-09-11T14:40:41.068Z",
-      "ctime": "2018-09-11T14:40:41.068Z",
-      "birthtime": "2018-09-11T14:26:07.872Z"
-    },
-    "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file": {
-      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file",
-      "children": [
-        "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file >>> MarkdownRemark"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "8fde484e61f2b47e4f0428b1b0bf6eb5",
-        "mediaType": "text/markdown",
-        "type": "File",
-        "description": "File \"src/pages/cn/docs/2019-06-09-post1.cn.md\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "docs",
-      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md",
-      "relativePath": "cn/docs/2019-06-09-post1.cn.md",
-      "extension": "md",
-      "size": 611,
-      "prettySize": "611 B",
-      "modifiedTime": "2018-09-11T14:46:24.826Z",
-      "accessTime": "2018-09-11T15:22:18.137Z",
-      "changeTime": "2018-09-11T14:46:24.826Z",
-      "birthTime": "2018-09-11T14:46:24.825Z",
-      "root": "/",
-      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs",
-      "base": "2019-06-09-post1.cn.md",
-      "ext": ".md",
-      "name": "2019-06-09-post1.cn",
-      "relativeDirectory": "cn/docs",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 13030096,
-      "blocks": 8,
-      "atimeMs": 1536679338136.7744,
-      "mtimeMs": 1536677184825.8804,
-      "ctimeMs": 1536677184825.8804,
-      "birthtimeMs": 1536677184825.4502,
-      "atime": "2018-09-11T15:22:18.137Z",
-      "mtime": "2018-09-11T14:46:24.826Z",
-      "ctime": "2018-09-11T14:46:24.826Z",
-      "birthtime": "2018-09-11T14:46:24.825Z"
-    },
-    "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2017-01-01-index.cn.md absPath of file": {
-      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2017-01-01-index.cn.md absPath of file",
-      "children": [
-        "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2017-01-01-index.cn.md absPath of file >>> MarkdownRemark"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "bcf20108b6308eb6052342e8a138e831",
-        "mediaType": "text/markdown",
-        "type": "File",
-        "description": "File \"src/pages/cn/docs/2017-01-01-index.cn.md\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "docs",
-      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2017-01-01-index.cn.md",
-      "relativePath": "cn/docs/2017-01-01-index.cn.md",
-      "extension": "md",
-      "size": 7595,
-      "prettySize": "7.59 kB",
-      "modifiedTime": "2018-09-11T14:55:05.723Z",
-      "accessTime": "2018-09-11T15:22:18.137Z",
-      "changeTime": "2018-09-11T14:55:05.723Z",
-      "birthTime": "2018-06-18T12:09:54.510Z",
-      "root": "/",
-      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs",
-      "base": "2017-01-01-index.cn.md",
-      "ext": ".md",
-      "name": "2017-01-01-index.cn",
-      "relativeDirectory": "cn/docs",
-      "dev": 16777220,
-      "mode": 33261,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 13030538,
-      "blocks": 16,
-      "atimeMs": 1536679338136.7368,
-      "mtimeMs": 1536677705722.787,
-      "ctimeMs": 1536677705722.787,
-      "birthtimeMs": 1529323794510.0537,
-      "atime": "2018-09-11T15:22:18.137Z",
-      "mtime": "2018-09-11T14:55:05.723Z",
-      "ctime": "2018-09-11T14:55:05.723Z",
-      "birthtime": "2018-06-18T12:09:54.510Z"
-    },
-    "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-13-for-contributors.en.md absPath of file": {
-      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-13-for-contributors.en.md absPath of file",
-      "children": [
-        "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-13-for-contributors.en.md absPath of file >>> MarkdownRemark"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "e6c8c17ddcb072a47be5b006acd4c1bb",
-        "mediaType": "text/markdown",
-        "type": "File",
-        "description": "File \"src/pages/en/docs/2017-01-13-for-contributors.en.md\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "docs",
-      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-13-for-contributors.en.md",
-      "relativePath": "en/docs/2017-01-13-for-contributors.en.md",
-      "extension": "md",
-      "size": 305,
-      "prettySize": "305 B",
-      "modifiedTime": "2018-09-11T14:44:53.525Z",
-      "accessTime": "2018-09-11T15:32:38.170Z",
-      "changeTime": "2018-09-11T14:44:53.525Z",
-      "birthTime": "2018-06-18T12:09:54.496Z",
-      "root": "/",
-      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs",
-      "base": "2017-01-13-for-contributors.en.md",
-      "ext": ".md",
-      "name": "2017-01-13-for-contributors.en",
-      "relativeDirectory": "en/docs",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 13028314,
-      "blocks": 8,
-      "atimeMs": 1536679958170.3445,
-      "mtimeMs": 1536677093525.2048,
-      "ctimeMs": 1536677093525.2048,
-      "birthtimeMs": 1529323794495.9197,
-      "atime": "2018-09-11T15:32:38.170Z",
-      "mtime": "2018-09-11T14:44:53.525Z",
-      "ctime": "2018-09-11T14:44:53.525Z",
-      "birthtime": "2018-06-18T12:09:54.496Z"
-    },
-    "/Users/robinclark/sites/gatsby-blog/src/pages/cn/index.js absPath of file": {
-      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/index.js absPath of file",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "725e935a52a05999e8ea497894636b22",
+        "contentDigest": "8e2883d6d56ea855434d40777a5835f2",
         "mediaType": "application/javascript",
         "type": "File",
-        "description": "File \"src/pages/cn/index.js\"",
+        "description": "File \"src/pages/cn/404.js\"",
         "owner": "gatsby-source-filesystem"
       },
       "sourceInstanceName": "docs",
-      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/index.js",
-      "relativePath": "cn/index.js",
+      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/404.js",
+      "relativePath": "cn/404.js",
       "extension": "js",
-      "size": 424,
-      "prettySize": "424 B",
-      "modifiedTime": "2018-09-11T15:24:44.621Z",
-      "accessTime": "2018-09-11T15:41:24.286Z",
-      "changeTime": "2018-09-11T15:24:44.621Z",
-      "birthTime": "2018-09-06T16:31:48.370Z",
+      "size": 312,
+      "prettySize": "312 B",
+      "modifiedTime": "2018-09-13T12:44:15.556Z",
+      "accessTime": "2018-09-14T12:31:57.982Z",
+      "changeTime": "2018-09-13T12:44:15.556Z",
+      "birthTime": "2018-09-06T16:31:48.369Z",
       "root": "/",
       "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/cn",
-      "base": "index.js",
+      "base": "404.js",
       "ext": ".js",
-      "name": "index",
+      "name": "404",
       "relativeDirectory": "cn",
       "dev": 16777220,
       "mode": 33188,
@@ -1720,16 +1498,106 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 12932801,
+      "ino": 12932800,
       "blocks": 8,
-      "atimeMs": 1536680484286.0842,
-      "mtimeMs": 1536679484621.3936,
-      "ctimeMs": 1536679484621.3936,
-      "birthtimeMs": 1536251508370.0605,
-      "atime": "2018-09-11T15:41:24.286Z",
-      "mtime": "2018-09-11T15:24:44.621Z",
-      "ctime": "2018-09-11T15:24:44.621Z",
-      "birthtime": "2018-09-06T16:31:48.370Z"
+      "atimeMs": 1536928317981.914,
+      "mtimeMs": 1536842655555.7668,
+      "ctimeMs": 1536842655555.7668,
+      "birthtimeMs": 1536251508369.4536,
+      "atime": "2018-09-14T12:31:57.982Z",
+      "mtime": "2018-09-13T12:44:15.556Z",
+      "ctime": "2018-09-13T12:44:15.556Z",
+      "birthtime": "2018-09-06T16:31:48.369Z"
+    },
+    "/Users/robinclark/sites/gatsby-blog/src/pages/cn/contact.js absPath of file": {
+      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/contact.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "c00fb90d634cdde57ac397f823b5f7ea",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "description": "File \"src/pages/cn/contact.js\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "docs",
+      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/contact.js",
+      "relativePath": "cn/contact.js",
+      "extension": "js",
+      "size": 706,
+      "prettySize": "706 B",
+      "modifiedTime": "2018-09-13T12:44:07.615Z",
+      "accessTime": "2018-09-14T12:31:57.982Z",
+      "changeTime": "2018-09-13T12:44:07.615Z",
+      "birthTime": "2018-09-06T17:21:50.611Z",
+      "root": "/",
+      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/cn",
+      "base": "contact.js",
+      "ext": ".js",
+      "name": "contact",
+      "relativeDirectory": "cn",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 12932804,
+      "blocks": 8,
+      "atimeMs": 1536928317981.9243,
+      "mtimeMs": 1536842647615.1565,
+      "ctimeMs": 1536842647615.1565,
+      "birthtimeMs": 1536254510610.7654,
+      "atime": "2018-09-14T12:31:57.982Z",
+      "mtime": "2018-09-13T12:44:07.615Z",
+      "ctime": "2018-09-13T12:44:07.615Z",
+      "birthtime": "2018-09-06T17:21:50.611Z"
+    },
+    "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs.js absPath of file": {
+      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "0ea5e3b5ba4922df7e93b694c4b553e5",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "description": "File \"src/pages/cn/docs.js\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "docs",
+      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs.js",
+      "relativePath": "cn/docs.js",
+      "extension": "js",
+      "size": 1349,
+      "prettySize": "1.35 kB",
+      "modifiedTime": "2018-09-13T12:44:04.520Z",
+      "accessTime": "2018-09-14T12:31:57.982Z",
+      "changeTime": "2018-09-13T12:44:04.520Z",
+      "birthTime": "2018-09-11T14:46:24.825Z",
+      "root": "/",
+      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/cn",
+      "base": "docs.js",
+      "ext": ".js",
+      "name": "docs",
+      "relativeDirectory": "cn",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 13030095,
+      "blocks": 8,
+      "atimeMs": 1536928317981.929,
+      "mtimeMs": 1536842644520.4417,
+      "ctimeMs": 1536842644520.4417,
+      "birthtimeMs": 1536677184824.5261,
+      "atime": "2018-09-14T12:31:57.982Z",
+      "mtime": "2018-09-13T12:44:04.520Z",
+      "ctime": "2018-09-13T12:44:04.520Z",
+      "birthtime": "2018-09-11T14:46:24.825Z"
     },
     "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/.DS_Store absPath of file": {
       "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/.DS_Store absPath of file",
@@ -1749,7 +1617,7 @@
       "size": 6148,
       "prettySize": "6.15 kB",
       "modifiedTime": "2018-09-11T14:41:10.815Z",
-      "accessTime": "2018-09-11T15:01:34.476Z",
+      "accessTime": "2018-09-14T12:32:11.643Z",
       "changeTime": "2018-09-11T14:41:10.815Z",
       "birthTime": "2018-09-11T14:31:24.753Z",
       "root": "/",
@@ -1767,14 +1635,247 @@
       "blksize": 4194304,
       "ino": 13029195,
       "blocks": 16,
-      "atimeMs": 1536678094475.6667,
+      "atimeMs": 1536928331642.9045,
       "mtimeMs": 1536676870815.4758,
       "ctimeMs": 1536676870815.4758,
       "birthtimeMs": 1536676284753.0945,
-      "atime": "2018-09-11T15:01:34.476Z",
+      "atime": "2018-09-14T12:32:11.643Z",
       "mtime": "2018-09-11T14:41:10.815Z",
       "ctime": "2018-09-11T14:41:10.815Z",
       "birthtime": "2018-09-11T14:31:24.753Z"
+    },
+    "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-13-for-contributors.en.md absPath of file": {
+      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-13-for-contributors.en.md absPath of file",
+      "children": [
+        "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-13-for-contributors.en.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "c62b17987c8ced29855ba668ebe7955c",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "description": "File \"src/pages/en/docs/2017-01-13-for-contributors.en.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "docs",
+      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-13-for-contributors.en.md",
+      "relativePath": "en/docs/2017-01-13-for-contributors.en.md",
+      "extension": "md",
+      "size": 350,
+      "prettySize": "350 B",
+      "modifiedTime": "2018-09-14T12:30:33.565Z",
+      "accessTime": "2018-09-14T12:32:05.431Z",
+      "changeTime": "2018-09-14T12:30:33.565Z",
+      "birthTime": "2018-09-14T11:14:21.874Z",
+      "root": "/",
+      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs",
+      "base": "2017-01-13-for-contributors.en.md",
+      "ext": ".md",
+      "name": "2017-01-13-for-contributors.en",
+      "relativeDirectory": "en/docs",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 13251486,
+      "blocks": 8,
+      "atimeMs": 1536928325431.142,
+      "mtimeMs": 1536928233564.9001,
+      "ctimeMs": 1536928233564.9001,
+      "birthtimeMs": 1536923661873.8271,
+      "atime": "2018-09-14T12:32:05.431Z",
+      "mtime": "2018-09-14T12:30:33.565Z",
+      "ctime": "2018-09-14T12:30:33.565Z",
+      "birthtime": "2018-09-14T11:14:21.874Z"
+    },
+    "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md absPath of file": {
+      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md absPath of file",
+      "children": [
+        "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "bcc8cc158a7660494a60639a974a2712",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "description": "File \"src/pages/en/docs/2017-01-19-glossary.en.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "docs",
+      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md",
+      "relativePath": "en/docs/2017-01-19-glossary.en.md",
+      "extension": "md",
+      "size": 6753,
+      "prettySize": "6.75 kB",
+      "modifiedTime": "2018-09-14T12:30:27.408Z",
+      "accessTime": "2018-09-14T12:32:05.431Z",
+      "changeTime": "2018-09-14T12:30:27.408Z",
+      "birthTime": "2018-09-14T11:14:21.876Z",
+      "root": "/",
+      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs",
+      "base": "2017-01-19-glossary.en.md",
+      "ext": ".md",
+      "name": "2017-01-19-glossary.en",
+      "relativeDirectory": "en/docs",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 13251487,
+      "blocks": 16,
+      "atimeMs": 1536928325431.1497,
+      "mtimeMs": 1536928227407.7148,
+      "ctimeMs": 1536928227407.7148,
+      "birthtimeMs": 1536923661875.8533,
+      "atime": "2018-09-14T12:32:05.431Z",
+      "mtime": "2018-09-14T12:30:27.408Z",
+      "ctime": "2018-09-14T12:30:27.408Z",
+      "birthtime": "2018-09-14T11:14:21.876Z"
+    },
+    "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md absPath of file": {
+      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md absPath of file",
+      "children": [
+        "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "744a11ed333840190424e8c5645f413a",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "description": "File \"src/pages/en/docs/2019-06-09-post2.en.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "docs",
+      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md",
+      "relativePath": "en/docs/2019-06-09-post2.en.md",
+      "extension": "md",
+      "size": 660,
+      "prettySize": "660 B",
+      "modifiedTime": "2018-09-14T12:30:14.405Z",
+      "accessTime": "2018-09-14T12:32:05.431Z",
+      "changeTime": "2018-09-14T12:30:14.405Z",
+      "birthTime": "2018-09-14T11:14:21.879Z",
+      "root": "/",
+      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs",
+      "base": "2019-06-09-post2.en.md",
+      "ext": ".md",
+      "name": "2019-06-09-post2.en",
+      "relativeDirectory": "en/docs",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 13251489,
+      "blocks": 8,
+      "atimeMs": 1536928325431.158,
+      "mtimeMs": 1536928214405.4055,
+      "ctimeMs": 1536928214405.4055,
+      "birthtimeMs": 1536923661879.3276,
+      "atime": "2018-09-14T12:32:05.431Z",
+      "mtime": "2018-09-14T12:30:14.405Z",
+      "ctime": "2018-09-14T12:30:14.405Z",
+      "birthtime": "2018-09-14T11:14:21.879Z"
+    },
+    "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/.DS_Store absPath of file": {
+      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/.DS_Store absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "194577a7e20bdcc7afbb718f502c134c",
+        "mediaType": "application/octet-stream",
+        "type": "File",
+        "description": "File \"src/pages/cn/docs/.DS_Store\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "docs",
+      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/.DS_Store",
+      "relativePath": "cn/docs/.DS_Store",
+      "extension": "",
+      "size": 6148,
+      "prettySize": "6.15 kB",
+      "modifiedTime": "2018-09-11T14:40:41.068Z",
+      "accessTime": "2018-09-14T12:32:11.643Z",
+      "changeTime": "2018-09-11T14:40:41.068Z",
+      "birthTime": "2018-09-11T14:26:07.872Z",
+      "root": "/",
+      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs",
+      "base": ".DS_Store",
+      "ext": "",
+      "name": ".DS_Store",
+      "relativeDirectory": "cn/docs",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 13028969,
+      "blocks": 16,
+      "atimeMs": 1536928331643.032,
+      "mtimeMs": 1536676841068.0037,
+      "ctimeMs": 1536676841068.0037,
+      "birthtimeMs": 1536675967872.4858,
+      "atime": "2018-09-14T12:32:11.643Z",
+      "mtime": "2018-09-11T14:40:41.068Z",
+      "ctime": "2018-09-11T14:40:41.068Z",
+      "birthtime": "2018-09-11T14:26:07.872Z"
+    },
+    "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2017-01-01-index.cn.md absPath of file": {
+      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2017-01-01-index.cn.md absPath of file",
+      "children": [
+        "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2017-01-01-index.cn.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "9b553e68a60ccc5f37e7851575bd2f96",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "description": "File \"src/pages/cn/docs/2017-01-01-index.cn.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "docs",
+      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2017-01-01-index.cn.md",
+      "relativePath": "cn/docs/2017-01-01-index.cn.md",
+      "extension": "md",
+      "size": 7635,
+      "prettySize": "7.63 kB",
+      "modifiedTime": "2018-09-14T12:30:49.750Z",
+      "accessTime": "2018-09-14T12:32:05.431Z",
+      "changeTime": "2018-09-14T12:30:49.750Z",
+      "birthTime": "2018-09-14T11:14:21.869Z",
+      "root": "/",
+      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs",
+      "base": "2017-01-01-index.cn.md",
+      "ext": ".md",
+      "name": "2017-01-01-index.cn",
+      "relativeDirectory": "cn/docs",
+      "dev": 16777220,
+      "mode": 33261,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 13251483,
+      "blocks": 16,
+      "atimeMs": 1536928325431.1138,
+      "mtimeMs": 1536928249750.3518,
+      "ctimeMs": 1536928249750.3518,
+      "birthtimeMs": 1536923661868.8936,
+      "atime": "2018-09-14T12:32:05.431Z",
+      "mtime": "2018-09-14T12:30:49.750Z",
+      "ctime": "2018-09-14T12:30:49.750Z",
+      "birthtime": "2018-09-14T11:14:21.869Z"
     },
     "/Users/robinclark/sites/gatsby-blog/src/pages/cn/about.js absPath of file": {
       "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/about.js absPath of file",
@@ -1793,9 +1894,9 @@
       "extension": "js",
       "size": 482,
       "prettySize": "482 B",
-      "modifiedTime": "2018-09-11T15:23:46.559Z",
-      "accessTime": "2018-09-11T15:41:24.286Z",
-      "changeTime": "2018-09-11T15:23:46.559Z",
+      "modifiedTime": "2018-09-13T12:44:12.084Z",
+      "accessTime": "2018-09-14T12:31:57.982Z",
+      "changeTime": "2018-09-13T12:44:12.084Z",
       "birthTime": "2018-09-06T17:09:25.662Z",
       "root": "/",
       "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/cn",
@@ -1812,44 +1913,42 @@
       "blksize": 4194304,
       "ino": 12932798,
       "blocks": 8,
-      "atimeMs": 1536680484286.0493,
-      "mtimeMs": 1536679426558.7495,
-      "ctimeMs": 1536679426558.7495,
+      "atimeMs": 1536928317981.9194,
+      "mtimeMs": 1536842652084.0164,
+      "ctimeMs": 1536842652084.0164,
       "birthtimeMs": 1536253765661.8696,
-      "atime": "2018-09-11T15:41:24.286Z",
-      "mtime": "2018-09-11T15:23:46.559Z",
-      "ctime": "2018-09-11T15:23:46.559Z",
+      "atime": "2018-09-14T12:31:57.982Z",
+      "mtime": "2018-09-13T12:44:12.084Z",
+      "ctime": "2018-09-13T12:44:12.084Z",
       "birthtime": "2018-09-06T17:09:25.662Z"
     },
-    "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md absPath of file": {
-      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md absPath of file",
-      "children": [
-        "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md absPath of file >>> MarkdownRemark"
-      ],
+    "/Users/robinclark/sites/gatsby-blog/src/pages/cn/index.js absPath of file": {
+      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/index.js absPath of file",
+      "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "041d474450ad0fa9c88c377a80ffe108",
-        "mediaType": "text/markdown",
+        "contentDigest": "725e935a52a05999e8ea497894636b22",
+        "mediaType": "application/javascript",
         "type": "File",
-        "description": "File \"src/pages/en/docs/2017-01-19-glossary.en.md\"",
+        "description": "File \"src/pages/cn/index.js\"",
         "owner": "gatsby-source-filesystem"
       },
       "sourceInstanceName": "docs",
-      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md",
-      "relativePath": "en/docs/2017-01-19-glossary.en.md",
-      "extension": "md",
-      "size": 6710,
-      "prettySize": "6.71 kB",
-      "modifiedTime": "2018-09-11T14:44:45.286Z",
-      "accessTime": "2018-09-11T15:22:18.138Z",
-      "changeTime": "2018-09-11T14:44:45.286Z",
-      "birthTime": "2018-06-18T12:09:54.497Z",
+      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/index.js",
+      "relativePath": "cn/index.js",
+      "extension": "js",
+      "size": 424,
+      "prettySize": "424 B",
+      "modifiedTime": "2018-09-13T12:44:00.612Z",
+      "accessTime": "2018-09-14T12:31:57.982Z",
+      "changeTime": "2018-09-13T12:44:00.612Z",
+      "birthTime": "2018-09-06T16:31:48.370Z",
       "root": "/",
-      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs",
-      "base": "2017-01-19-glossary.en.md",
-      "ext": ".md",
-      "name": "2017-01-19-glossary.en",
-      "relativeDirectory": "en/docs",
+      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/cn",
+      "base": "index.js",
+      "ext": ".js",
+      "name": "index",
+      "relativeDirectory": "cn",
       "dev": 16777220,
       "mode": 33188,
       "nlink": 1,
@@ -1857,16 +1956,63 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 13028315,
-      "blocks": 16,
-      "atimeMs": 1536679338137.6245,
-      "mtimeMs": 1536677085285.7378,
-      "ctimeMs": 1536677085285.7378,
-      "birthtimeMs": 1529323794496.7434,
-      "atime": "2018-09-11T15:22:18.138Z",
-      "mtime": "2018-09-11T14:44:45.286Z",
-      "ctime": "2018-09-11T14:44:45.286Z",
-      "birthtime": "2018-06-18T12:09:54.497Z"
+      "ino": 12932801,
+      "blocks": 8,
+      "atimeMs": 1536928317982.0205,
+      "mtimeMs": 1536842640612.2744,
+      "ctimeMs": 1536842640612.2744,
+      "birthtimeMs": 1536251508370.0605,
+      "atime": "2018-09-14T12:31:57.982Z",
+      "mtime": "2018-09-13T12:44:00.612Z",
+      "ctime": "2018-09-13T12:44:00.612Z",
+      "birthtime": "2018-09-06T16:31:48.370Z"
+    },
+    "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file": {
+      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file",
+      "children": [
+        "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "1b03e44dbd47401ffaeb430d6d6a7371",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "description": "File \"src/pages/cn/docs/2019-06-09-post1.cn.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "docs",
+      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md",
+      "relativePath": "cn/docs/2019-06-09-post1.cn.md",
+      "extension": "md",
+      "size": 657,
+      "prettySize": "657 B",
+      "modifiedTime": "2018-09-14T12:30:42.462Z",
+      "accessTime": "2018-09-14T12:32:05.431Z",
+      "changeTime": "2018-09-14T12:30:42.462Z",
+      "birthTime": "2018-09-14T11:14:21.871Z",
+      "root": "/",
+      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs",
+      "base": "2019-06-09-post1.cn.md",
+      "ext": ".md",
+      "name": "2019-06-09-post1.cn",
+      "relativeDirectory": "cn/docs",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 13251484,
+      "blocks": 8,
+      "atimeMs": 1536928325431.1272,
+      "mtimeMs": 1536928242462.427,
+      "ctimeMs": 1536928242462.427,
+      "birthtimeMs": 1536923661870.5671,
+      "atime": "2018-09-14T12:32:05.431Z",
+      "mtime": "2018-09-14T12:30:42.462Z",
+      "ctime": "2018-09-14T12:30:42.462Z",
+      "birthtime": "2018-09-14T11:14:21.871Z"
     },
     "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2018-06-09-post1.en.md absPath of file": {
       "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2018-06-09-post1.en.md absPath of file",
@@ -1875,7 +2021,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "9354694ed8974b59fa09850f19953e96",
+        "contentDigest": "d5df3ec9740a5c0be82c79451ed979c4",
         "mediaType": "text/markdown",
         "type": "File",
         "description": "File \"src/pages/en/docs/2018-06-09-post1.en.md\"",
@@ -1885,12 +2031,12 @@
       "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2018-06-09-post1.en.md",
       "relativePath": "en/docs/2018-06-09-post1.en.md",
       "extension": "md",
-      "size": 625,
-      "prettySize": "625 B",
-      "modifiedTime": "2018-09-11T14:46:24.828Z",
-      "accessTime": "2018-09-11T15:22:18.138Z",
-      "changeTime": "2018-09-11T14:46:24.828Z",
-      "birthTime": "2018-09-11T14:46:24.828Z",
+      "size": 670,
+      "prettySize": "670 B",
+      "modifiedTime": "2018-09-14T12:30:19.296Z",
+      "accessTime": "2018-09-14T12:32:05.431Z",
+      "changeTime": "2018-09-14T12:30:19.296Z",
+      "birthTime": "2018-09-14T11:14:21.878Z",
       "root": "/",
       "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs",
       "base": "2018-06-09-post1.en.md",
@@ -1904,95 +2050,25 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 13030098,
+      "ino": 13251488,
       "blocks": 8,
-      "atimeMs": 1536679338137.6606,
-      "mtimeMs": 1536677184827.7996,
-      "ctimeMs": 1536677184827.7996,
-      "birthtimeMs": 1536677184827.6582,
-      "atime": "2018-09-11T15:22:18.138Z",
-      "mtime": "2018-09-11T14:46:24.828Z",
-      "ctime": "2018-09-11T14:46:24.828Z",
-      "birthtime": "2018-09-11T14:46:24.828Z"
-    },
-    "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md absPath of file": {
-      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md absPath of file",
-      "children": [
-        "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md absPath of file >>> MarkdownRemark"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "6a33e12acfb6e0f53b04d339704f07b0",
-        "mediaType": "text/markdown",
-        "type": "File",
-        "description": "File \"src/pages/en/docs/2019-06-09-post2.en.md\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "docs",
-      "absolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md",
-      "relativePath": "en/docs/2019-06-09-post2.en.md",
-      "extension": "md",
-      "size": 615,
-      "prettySize": "615 B",
-      "modifiedTime": "2018-09-11T14:46:24.829Z",
-      "accessTime": "2018-09-11T15:22:18.138Z",
-      "changeTime": "2018-09-11T14:46:24.829Z",
-      "birthTime": "2018-09-11T14:46:24.828Z",
-      "root": "/",
-      "dir": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs",
-      "base": "2019-06-09-post2.en.md",
-      "ext": ".md",
-      "name": "2019-06-09-post2.en",
-      "relativeDirectory": "en/docs",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 13030099,
-      "blocks": 8,
-      "atimeMs": 1536679338137.6997,
-      "mtimeMs": 1536677184828.8801,
-      "ctimeMs": 1536677184828.8801,
-      "birthtimeMs": 1536677184828.4062,
-      "atime": "2018-09-11T15:22:18.138Z",
-      "mtime": "2018-09-11T14:46:24.829Z",
-      "ctime": "2018-09-11T14:46:24.829Z",
-      "birthtime": "2018-09-11T14:46:24.828Z"
-    },
-    "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file >>> MarkdownRemark",
-      "children": [],
-      "parent": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file",
-      "internal": {
-        "content": "---\npath: '/cn/post-1'\ntitle: 'Post 1 (CN)'\ndate: '06-09-2018'\nauthor: 'Tom V'\nlanguage: 'cn'\n---\n\n##你好!\n\nCillum enim sint excepteur laborum mollit nulla dolore dolore id pariatur. Ea ullamco ex aute aliquip deserunt. Quis deserunt fugiat adipisicing ea cupidatat. Duis anim nisi officia sit irure. Esse Lorem exercitation ex ut.\n\nTempor duis nisi ipsum deserunt Lorem duis voluptate aliqua deserunt ipsum occaecat consectetur velit ipsum. Minim eu eu culpa deserunt sit quis reprehenderit velit sunt esse non irure quis velit. Incididunt magna ipsum anim cillum excepteur proident excepteur aliquip tempor.",
-        "type": "MarkdownRemark",
-        "contentDigest": "9b88e81e3649216a9692f78d7024b2a5",
-        "owner": "gatsby-transformer-remark"
-      },
-      "frontmatter": {
-        "title": "Post 1 (CN)",
-        "path": "/cn/post-1",
-        "date": "06-09-2018",
-        "author": "Tom V",
-        "language": "cn",
-        "_PARENT": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file",
-        "parent": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file"
-      },
-      "excerpt": "",
-      "rawMarkdownBody": "\n##你好!\n\nCillum enim sint excepteur laborum mollit nulla dolore dolore id pariatur. Ea ullamco ex aute aliquip deserunt. Quis deserunt fugiat adipisicing ea cupidatat. Duis anim nisi officia sit irure. Esse Lorem exercitation ex ut.\n\nTempor duis nisi ipsum deserunt Lorem duis voluptate aliqua deserunt ipsum occaecat consectetur velit ipsum. Minim eu eu culpa deserunt sit quis reprehenderit velit sunt esse non irure quis velit. Incididunt magna ipsum anim cillum excepteur proident excepteur aliquip tempor.",
-      "fileAbsolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md"
+      "atimeMs": 1536928325431.1538,
+      "mtimeMs": 1536928219295.863,
+      "ctimeMs": 1536928219295.863,
+      "birthtimeMs": 1536923661877.9624,
+      "atime": "2018-09-14T12:32:05.431Z",
+      "mtime": "2018-09-14T12:30:19.296Z",
+      "ctime": "2018-09-14T12:30:19.296Z",
+      "birthtime": "2018-09-14T11:14:21.878Z"
     },
     "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-13-for-contributors.en.md absPath of file >>> MarkdownRemark": {
       "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-13-for-contributors.en.md absPath of file >>> MarkdownRemark",
       "children": [],
       "parent": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-13-for-contributors.en.md absPath of file",
       "internal": {
-        "content": "---\nlayout: default\ntitle: For Contributors\ngroup: base\npermalink: /for-contributors/\npath: '/en/for-contributors/'\nchildren: for-contributors\nlanguage: en\n---\n\n# Redirecting...\n\n<script>\n    window.location.replace(\"https://github.com/input-output-hk/cardano-sl/blob/develop/CONTRIBUTING.md\");\n</script>\n",
+        "content": "---\nlayout: default\ntitle: For Contributors\ngroup: base\npermalink: /for-contributors/\npath: '/en/for-contributors/'\nchildren: for-contributors\nlanguage: en\nkeywords: 'contributors bar'\n---\n\n# Redirecting bar...\n<!-- end -->\n<script>\n    window.location.replace(\"https://github.com/input-output-hk/cardano-sl/blob/develop/CONTRIBUTING.md\");\n</script>\n",
         "type": "MarkdownRemark",
-        "contentDigest": "0ec25170855ed765bdc977af3e63e8b4",
+        "contentDigest": "e8cabb6bac8d89bb9e76927b319a077f",
         "owner": "gatsby-transformer-remark"
       },
       "frontmatter": {
@@ -2003,21 +2079,71 @@
         "path": "/en/for-contributors/",
         "children": "for-contributors",
         "language": "en",
+        "keywords": "contributors bar",
         "_PARENT": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-13-for-contributors.en.md absPath of file",
         "parent": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-13-for-contributors.en.md absPath of file"
       },
-      "excerpt": "",
-      "rawMarkdownBody": "\n# Redirecting...\n\n<script>\n    window.location.replace(\"https://github.com/input-output-hk/cardano-sl/blob/develop/CONTRIBUTING.md\");\n</script>\n",
+      "excerpt": "\n# Redirecting bar...\n",
+      "rawMarkdownBody": "\n# Redirecting bar...\n<!-- end -->\n<script>\n    window.location.replace(\"https://github.com/input-output-hk/cardano-sl/blob/develop/CONTRIBUTING.md\");\n</script>\n",
       "fileAbsolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-13-for-contributors.en.md"
+    },
+    "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md absPath of file",
+      "internal": {
+        "content": "---\nlayout: default\ntitle: Glossary\npermalink: /glossary/\npath: '/en/glossary/'\ngroup: base\nlanguage: en\nkeywords: 'glossary foo'\n---\n\n<!-- Reviewed at d0d6c2fedefb642744a24b4b0a6d8d7ad11532f6 -->\n\n# glossary foo\n\n## Ada\n\nThe name of our currency, named in honor of [Ada\nLovelace](https://en.wikipedia.org/wiki/Ada_Lovelace).\n\n## Address\n\nThe unique identifier of a [node](#node). Please read about [Addresses in\nCardano SL](/cardano/addresses/) for more details.\n\n<!-- end -->\n\n## Balance\n\nPlease read about [Balance and Stake in Cardano SL](/cardano/balance-and-stake/)\nfor explanation.\n\n## Block\n\nA fundamental part of a [Ledger](#ledger). Please read about [Blocks in Cardano\nSL](/technical/blocks/) for technical details.\n\n## Blockchain\n\nPlease see [Ledger](#ledger).\n\n## Cardano SL\n\nCardano SL (or Cardano Settlement Layer) is a decentralized cryptographic\ncurrency designed and developed by [IOHK](https://iohk.io/team). Named in honor\nof [Gerolamo Cardano](https://en.wikipedia.org/wiki/Gerolamo_Cardano).\n\n## Coin Tossing\n\nA Coin Tossing is a protocol that allows two or more parties to obtain\na uniformly random value. We use Coin Tossing protocol as a base of [SSC](#ssc).\nPlease read [paper](#paper) (page 36) for more details about Coin Tossing.\n\n## Consensus Algorithm\n\nA way for a decentralized system to reach a consistent view on shared\ncollections of data. Cardano SL uses the [Ouroboros Consensus\nAlgorithm](/cardano/proof-of-stake/), which is an algorithm based on\n[Proof of Stake](#proof-of-stake).\n\n## Cryptocurrency\n\nA computer system which uses cryptographic protocols to generate a ledger.\nPlease read about [Cryptocurrency Basics](/introduction/#cryptocurrency-basics)\nfor more details.\n\n## Daedalus\n\nCardano SL wallet application. It provides a GUI for users, so they can access\ntheir funds, send and receive transactions, etc. Please read about [Cardano SL\nWallet Frontend](/technical/wallet-frontend/) for more details.\n\n## Decentralization\n\nA notion of a computer system operating through interaction of independent\nnodes. In case of maintaining a shared data collection such as a ledger, a\nconsensus is required for consistency and reliability of data.\n\n## Epoch\n\nA bigger period of time for which we know in advance who will have the right to\ngenerate a block in each slot. Please read [paper](#paper) (page 3) for\ntechnical details.\n\n## Follow The Satoshi\n\nA mechanism whereby stakeholders are selected at random to forge a new block in\nthe blockchain, with a proportional chance to get elected depending on their\namount of stake in the protocol.\n\n## Guaranteed Output Delivery\n\nGuaranteed output delivery is a mechanism that proves that the honest parties\nare guaranteed to successfully complete the multiparty computation (MPC). We\nuse G.O.D. in [SSC](#ssc).\n\n## Honest Majority\n\nHonest majority is a situation when the number of honest participants is strictly\ngreater than the number of adversaries, i.e. at least 50% + 1. Honest majority \nis assumed by default.\n\n## Kademlia\n\nPlease see [Peer Discovery](#peer-discovery).\n\n## Leader Election\n\nA process of picking who will generate blocks during the next epoch. Leaders are\nelected with a probability proportional to their stake (see [Proof of\nStake](#proof-of-stake), [Follow the Satoshi](#follow-the-satoshi)).\n\n## Ledger\n\nA collection of data that keeps track of value assigned to individuals. Please\nread [paper](#paper) (page 32) for technical details.\n\n## Lovelace\n\nName of a smallest unit of our currency. Named in honor of [Ada\nLovelace](https://en.wikipedia.org/wiki/Ada_Lovelace).\n\n## Minting\n\nA process of a new block creation in [Proof of\nStake](/introduction/#proof-of-stake-and-minting) systems.\n\n## Node\n\nA computer program that participates in a decentralized protocol system. Please\nread [High-level technical overview](/technical/#high-level-overview) for more\ndetails.\n\n## Paper\n\nOfficial protocol report [Ouroboros: A Provably Secure Proof-of-Stake Blockchain\nProtocol](https://eprint.iacr.org/2016/889). Please notice that Cardano SL\nimplementation differs from the paper, [read about\ndifferences](/cardano/differences/) for more details.\n\n## Peer Discovery\n\nA way how a node can find other nodes after running. Peer discovery we use is\nbased on Kademlia DHT. Please read [a Kademlia\npaper](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf)\nfor technical details.\n\n## Plutus\n\nStrictly typed pure functional programming language used for defining smart\ncontracts in Cardano. Please read about\n[Plutus](/technical/plutus/introduction/) for more details.\n\n## Proof of Stake\n\nOuroboros Proof of Stake algorithm is the most important part of the [protocol](#paper).\nIt defines the way [nodes](#node) reach consensus about the state of [ledger](#ledger).\nPlease read about [Ouroboros Proof of Stake Algorithm](/cardano/proof-of-stake/)\nfor more details.\n\n## PVSS\n\nPVSS (Publicly Verifiable Secret Sharing) is a cryptographic scheme we use in [SSC](#ssc).\nPlease read about [PVSS implementation in Cardano SL](/technical/pvss/) for more details.\n\n## Richman\n\nStakeholder with stake enough for participation in some action. Particularly,\nthere are three kinds of such actions: randomness generation (for [slot leaders\nelections process](/technical/leader-selection/)),\n[heavyweight stake delegation](/technical/delegation/#heavyweight-delegation)\nand voting for [update proposals](/cardano/update-mechanism/#application-update-sign-and-announce).\n\n## Signing\n\nA way to generate a proof of genuine authenticity of any kind of information we\nuse in [cryptocurrency](#cryptocurrency).\n\n## Slot\n\nA small period of physical time that is significantly larger than the expected\ndifference in clocks on different nodes. Please read [paper](#paper) (page 4) for\ntechnical details.\n\n## Slot Leader\n\nA slot leader is a node which was elected to have a right to create a block in\nthe current slot. Please read [paper](#paper) (page 7) for technical details.\n\n## SSC\n\nSSC (Shared Seed Computation) is a part of [slot leader election](#leader-election)\nprocess. This part is implemented as a [Coin Tossing](#coin-tossing) protocol with\n[Guaranteed Output Delivery](#guaranteed-output-delivery). As a result of SSC we get\na randomness which will be used in [Follow The Satoshi](#follow-the-satoshi) mechanism.\n\n## Stake\n\nPlease read about [Balance and Stake in Cardano SL](/cardano/balance-and-stake/)\nfor explanation.\n\n## Stakeholder\n\nA node with a positive stake.\n\n## Transaction\n\nThe data that represents the act of transferring value. Please read about\n[Transactions in Cardano SL](/cardano/transactions/) for more details.\n\n## Transaction Fees\n\nPlease read about [Transaction Fees in Cardano SL](/cardano/transaction-fees/)\nfor explanation.\n",
+        "type": "MarkdownRemark",
+        "contentDigest": "e6c182202f86841a99ec7447b41f6927",
+        "owner": "gatsby-transformer-remark"
+      },
+      "frontmatter": {
+        "title": "Glossary",
+        "layout": "default",
+        "permalink": "/glossary/",
+        "path": "/en/glossary/",
+        "group": "base",
+        "language": "en",
+        "keywords": "glossary foo",
+        "_PARENT": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md absPath of file",
+        "parent": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md absPath of file"
+      },
+      "excerpt": "\n<!-- Reviewed at d0d6c2fedefb642744a24b4b0a6d8d7ad11532f6 -->\n\n# glossary foo\n\n## Ada\n\nThe name of our currency, named in honor of [Ada\nLovelace](https://en.wikipedia.org/wiki/Ada_Lovelace).\n\n## Address\n\nThe unique identifier of a [node](#node). Please read about [Addresses in\nCardano SL](/cardano/addresses/) for more details.\n\n",
+      "rawMarkdownBody": "\n<!-- Reviewed at d0d6c2fedefb642744a24b4b0a6d8d7ad11532f6 -->\n\n# glossary foo\n\n## Ada\n\nThe name of our currency, named in honor of [Ada\nLovelace](https://en.wikipedia.org/wiki/Ada_Lovelace).\n\n## Address\n\nThe unique identifier of a [node](#node). Please read about [Addresses in\nCardano SL](/cardano/addresses/) for more details.\n\n<!-- end -->\n\n## Balance\n\nPlease read about [Balance and Stake in Cardano SL](/cardano/balance-and-stake/)\nfor explanation.\n\n## Block\n\nA fundamental part of a [Ledger](#ledger). Please read about [Blocks in Cardano\nSL](/technical/blocks/) for technical details.\n\n## Blockchain\n\nPlease see [Ledger](#ledger).\n\n## Cardano SL\n\nCardano SL (or Cardano Settlement Layer) is a decentralized cryptographic\ncurrency designed and developed by [IOHK](https://iohk.io/team). Named in honor\nof [Gerolamo Cardano](https://en.wikipedia.org/wiki/Gerolamo_Cardano).\n\n## Coin Tossing\n\nA Coin Tossing is a protocol that allows two or more parties to obtain\na uniformly random value. We use Coin Tossing protocol as a base of [SSC](#ssc).\nPlease read [paper](#paper) (page 36) for more details about Coin Tossing.\n\n## Consensus Algorithm\n\nA way for a decentralized system to reach a consistent view on shared\ncollections of data. Cardano SL uses the [Ouroboros Consensus\nAlgorithm](/cardano/proof-of-stake/), which is an algorithm based on\n[Proof of Stake](#proof-of-stake).\n\n## Cryptocurrency\n\nA computer system which uses cryptographic protocols to generate a ledger.\nPlease read about [Cryptocurrency Basics](/introduction/#cryptocurrency-basics)\nfor more details.\n\n## Daedalus\n\nCardano SL wallet application. It provides a GUI for users, so they can access\ntheir funds, send and receive transactions, etc. Please read about [Cardano SL\nWallet Frontend](/technical/wallet-frontend/) for more details.\n\n## Decentralization\n\nA notion of a computer system operating through interaction of independent\nnodes. In case of maintaining a shared data collection such as a ledger, a\nconsensus is required for consistency and reliability of data.\n\n## Epoch\n\nA bigger period of time for which we know in advance who will have the right to\ngenerate a block in each slot. Please read [paper](#paper) (page 3) for\ntechnical details.\n\n## Follow The Satoshi\n\nA mechanism whereby stakeholders are selected at random to forge a new block in\nthe blockchain, with a proportional chance to get elected depending on their\namount of stake in the protocol.\n\n## Guaranteed Output Delivery\n\nGuaranteed output delivery is a mechanism that proves that the honest parties\nare guaranteed to successfully complete the multiparty computation (MPC). We\nuse G.O.D. in [SSC](#ssc).\n\n## Honest Majority\n\nHonest majority is a situation when the number of honest participants is strictly\ngreater than the number of adversaries, i.e. at least 50% + 1. Honest majority \nis assumed by default.\n\n## Kademlia\n\nPlease see [Peer Discovery](#peer-discovery).\n\n## Leader Election\n\nA process of picking who will generate blocks during the next epoch. Leaders are\nelected with a probability proportional to their stake (see [Proof of\nStake](#proof-of-stake), [Follow the Satoshi](#follow-the-satoshi)).\n\n## Ledger\n\nA collection of data that keeps track of value assigned to individuals. Please\nread [paper](#paper) (page 32) for technical details.\n\n## Lovelace\n\nName of a smallest unit of our currency. Named in honor of [Ada\nLovelace](https://en.wikipedia.org/wiki/Ada_Lovelace).\n\n## Minting\n\nA process of a new block creation in [Proof of\nStake](/introduction/#proof-of-stake-and-minting) systems.\n\n## Node\n\nA computer program that participates in a decentralized protocol system. Please\nread [High-level technical overview](/technical/#high-level-overview) for more\ndetails.\n\n## Paper\n\nOfficial protocol report [Ouroboros: A Provably Secure Proof-of-Stake Blockchain\nProtocol](https://eprint.iacr.org/2016/889). Please notice that Cardano SL\nimplementation differs from the paper, [read about\ndifferences](/cardano/differences/) for more details.\n\n## Peer Discovery\n\nA way how a node can find other nodes after running. Peer discovery we use is\nbased on Kademlia DHT. Please read [a Kademlia\npaper](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf)\nfor technical details.\n\n## Plutus\n\nStrictly typed pure functional programming language used for defining smart\ncontracts in Cardano. Please read about\n[Plutus](/technical/plutus/introduction/) for more details.\n\n## Proof of Stake\n\nOuroboros Proof of Stake algorithm is the most important part of the [protocol](#paper).\nIt defines the way [nodes](#node) reach consensus about the state of [ledger](#ledger).\nPlease read about [Ouroboros Proof of Stake Algorithm](/cardano/proof-of-stake/)\nfor more details.\n\n## PVSS\n\nPVSS (Publicly Verifiable Secret Sharing) is a cryptographic scheme we use in [SSC](#ssc).\nPlease read about [PVSS implementation in Cardano SL](/technical/pvss/) for more details.\n\n## Richman\n\nStakeholder with stake enough for participation in some action. Particularly,\nthere are three kinds of such actions: randomness generation (for [slot leaders\nelections process](/technical/leader-selection/)),\n[heavyweight stake delegation](/technical/delegation/#heavyweight-delegation)\nand voting for [update proposals](/cardano/update-mechanism/#application-update-sign-and-announce).\n\n## Signing\n\nA way to generate a proof of genuine authenticity of any kind of information we\nuse in [cryptocurrency](#cryptocurrency).\n\n## Slot\n\nA small period of physical time that is significantly larger than the expected\ndifference in clocks on different nodes. Please read [paper](#paper) (page 4) for\ntechnical details.\n\n## Slot Leader\n\nA slot leader is a node which was elected to have a right to create a block in\nthe current slot. Please read [paper](#paper) (page 7) for technical details.\n\n## SSC\n\nSSC (Shared Seed Computation) is a part of [slot leader election](#leader-election)\nprocess. This part is implemented as a [Coin Tossing](#coin-tossing) protocol with\n[Guaranteed Output Delivery](#guaranteed-output-delivery). As a result of SSC we get\na randomness which will be used in [Follow The Satoshi](#follow-the-satoshi) mechanism.\n\n## Stake\n\nPlease read about [Balance and Stake in Cardano SL](/cardano/balance-and-stake/)\nfor explanation.\n\n## Stakeholder\n\nA node with a positive stake.\n\n## Transaction\n\nThe data that represents the act of transferring value. Please read about\n[Transactions in Cardano SL](/cardano/transactions/) for more details.\n\n## Transaction Fees\n\nPlease read about [Transaction Fees in Cardano SL](/cardano/transaction-fees/)\nfor explanation.\n",
+      "fileAbsolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md"
+    },
+    "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md absPath of file",
+      "internal": {
+        "content": "---\npath: '/en/post-2'\ntitle: 'Post 2'\ndate: '06-09-2018'\nauthor: 'Jonny S'\nlanguage: 'en'\nkeywords: 'post2 two'\n---\n\n##This is Post 2\n\npost2 two Tempor duis nisi ipsum deserunt Lorem duis voluptate aliqua deserunt ipsum occaecat consectetur velit ipsum. Minim eu eu culpa deserunt sit quis reprehenderit velit sunt esse non irure quis velit. Incididunt magna ipsum anim cillum excepteur proident excepteur aliquip tempor.\n<!-- end -->\n\nCillum enim sint excepteur laborum mollit nulla dolore dolore id pariatur. Ea ullamco ex aute aliquip deserunt. Quis deserunt fugiat adipisicing ea cupidatat. Duis anim nisi officia sit irure. Esse Lorem exercitation ex ut.",
+        "type": "MarkdownRemark",
+        "contentDigest": "1858bbcdbee7d8e68e4dfe14881327bc",
+        "owner": "gatsby-transformer-remark"
+      },
+      "frontmatter": {
+        "title": "Post 2",
+        "path": "/en/post-2",
+        "date": "06-09-2018",
+        "author": "Jonny S",
+        "language": "en",
+        "keywords": "post2 two",
+        "_PARENT": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md absPath of file",
+        "parent": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md absPath of file"
+      },
+      "excerpt": "\n##This is Post 2\n\npost2 two Tempor duis nisi ipsum deserunt Lorem duis voluptate aliqua deserunt ipsum occaecat consectetur velit ipsum. Minim eu eu culpa deserunt sit quis reprehenderit velit sunt esse non irure quis velit. Incididunt magna ipsum anim cillum excepteur proident excepteur aliquip tempor.\n",
+      "rawMarkdownBody": "\n##This is Post 2\n\npost2 two Tempor duis nisi ipsum deserunt Lorem duis voluptate aliqua deserunt ipsum occaecat consectetur velit ipsum. Minim eu eu culpa deserunt sit quis reprehenderit velit sunt esse non irure quis velit. Incididunt magna ipsum anim cillum excepteur proident excepteur aliquip tempor.\n<!-- end -->\n\nCillum enim sint excepteur laborum mollit nulla dolore dolore id pariatur. Ea ullamco ex aute aliquip deserunt. Quis deserunt fugiat adipisicing ea cupidatat. Duis anim nisi officia sit irure. Esse Lorem exercitation ex ut.",
+      "fileAbsolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md"
     },
     "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2017-01-01-index.cn.md absPath of file >>> MarkdownRemark": {
       "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2017-01-01-index.cn.md absPath of file >>> MarkdownRemark",
       "children": [],
       "parent": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2017-01-01-index.cn.md absPath of file",
       "internal": {
-        "content": "---\nlayout: default\ntitle: 介绍\npath: '/cn/introduction'\npermalink: /introduction/cn/\ngroup: base\nlanguage: cn\nauthor: me\ndate: '06-09-2018'\n---\n\n<!-- Reviewed at d0868afac50ba6ffcbd95054e65cbf77fa513082 -->\n\n亲爱的读者，本文档的目的是让您对于 Cardano 平台技术栈第一层即结算层有所了解。如果您理解了结算层是什么，我们建议您先阅读[论文和实现的差异](/cardano/differences/)，然后再阅读[协议和实现的文档](/technical/protocols/csl-application-level/)。\n\n本文档目标读者是 IOHK 的开发人员，第三方软件开发人员，审计和致力于实现卡尔达诺结算层或使用卡尔达诺结算层参考实现的咨询人员。\n\n<!-- CARDANO_SL_README_BEGIN_1 -->\n## 什么是卡尔达诺结算层?\n\nCardano SL（或卡尔达诺运算层）是由 [IOHK](https://iohk.io/team) 联合爱丁堡大学，雅典大学和康涅狄格大学共同设计开发的一种加密货币。卡尔达诺运算层是基于 Aggelos Kiayias，Alexander Russell，Bernardo David 和 Roman Oliynykov 的白皮书 [『乌洛波罗斯：可证明安全的权益证明协议』](https://iohk.io/research/papers/#9BKRHCSI)的 Haskell 实现。\n\n您可以将卡尔达诺结算层视为基于比特币重新设计的针对比特币缺陷的自由修复。 有关卡尔达诺结算层和比特币之间的相似之处和差异的更多信息，请阅读[『卡尔达诺结算层为什么特别?』](http://cardanodocs.com/introduction/cn/#%E5%8D%A1%E5%B0%94%E8%BE%BE%E8%AF%BA%E8%BF%90%E7%AE%97%E5%B1%82%E4%B8%BA%E4%BB%80%E4%B9%88%E7%89%B9%E5%88%AB)。\n\n\n<!-- CARDANO_SL_README_END_1 -->\n\n## 加密货币基础\n\n\n在给出加密货币的定义之前，我们先来谈谈为什么我们在意数字货币，特别是加密货币。\n\n### 我们为什么在意?\n\n#### 速度\n\n与传统（也称为法定）中心银行货币，与日元或美元相反，电子货币不需要一个银行系统来转移价值。这一限制的解除，使用数字货币的速度要快于银行业务，尤其是在全球范围内。使用数字货币从大阪转移10美元到丹佛不再需要数天的时间。无论距离如何，所有交易都能迅速完成。\n\n\n#### 你掌控你自己的钱\n\n所有的商业银行账户所有者在收到支付请求后在合理的时间内只能支付一定的金额。银行体系对任何价值量都有限制，使个人无法迅速撤出或转移大量资金。有加密货币的情况下，持有一种称为**密钥**这一特殊信息的人就可以随意花钱。没有其他实体有权操纵用户拥有的价值。\n\n\n#### 匿名\n\n人们可以根据需要，拥有任意多的加密货币地址，从不同的地址接收，消费资产。经营电子商务商店的商家可以拥有一组收款和退款的地址，以及一个用于他们自身需要的单独的个人『钱包』。通过统一的接口控制所有这些钱包，并且不需要登录到多个支付平台，这使得该过程非常节省时间。\n\n#### 安全\n\n你的钱就像可用于消费的**密钥**一样安全。这意味着将密钥存储在保险箱中的 USB 闪存上相当于让纸币处于安全状态。即使进行了成功的网络攻击，也绝对没有人能够窃取这笔钱。\n\n#### 扩展性\n\n使用一种称为[侧链](https://www.blockstream.com/sidechains.pdf)的方法，以及通用加密货币，如卡尔达诺结算层和比特币，就可以启用特定领域的加密货币，例如以太经典。这样一来，通过特定领域的加密货币开发的任何创新产品都可以让参与者在通用的加密货币中保持价值。这样的应用程序的例子有身份管理，游戏和赌博，以及可验证计算。\n\n\n### 什么是加密货币?\n\n加密货币是一种数字货币形式，使用密码来控制价值。密码学提供了一种生成任何类型信息的真实真实性证据的方法。这就是所谓的*数字签名*。在加密货币中，我们通过签署和发送交易到网络并接收已确认的交易块，生成一个总账（一个提供每个地址有多少钱的信息的数据库）。加密货币通常是分散的，这意味着来自全球各地的许多人通过运行加密货币节点参与总账的生成。因此，必须达成关于总账状况的共识。下一节讨论实现这种共识的两个最重要的方法。\n\n\n## 卡尔达诺结算层为什么特别\n\n<!-- v0.1.0.0 -->\n\n虽然比特币和卡尔达诺结算层之间有相似之处，但这两个加密货币之间也有很多不同之处。最显着的区别是，比特币是工作量证明类型的加密货币，而卡尔达诺结算层使用权益证明的方法达成共识。这鼓励诚信和长期的参与。\n\n\n### 共识算法的目的\n\n\n共识算法被用来产生新的交易区块，使账本更新状态。每当有人发布一个交易区块时，他们（或者说他们的运行加密货币协议的节点）就必须附上他们已经证明的证据。下面讨论两种类型的证明。\n\n\n### 工作量证明和挖矿\n\n工作量证明是加密货币最普遍的共识算法类型。它起源于比特币，加密货币就是这么工作的。为了生成工作证明，计算机必须解决一个挑战。这是难以解决的计算繁重的问题，但解决方案很容易验证。当一台基于网络的工作量证明的计算机找到一个解决方案时，它会将交易发布于同它一起计算的其他计算机。这台计算机会因为产生区块得到交易费和奖励。整个过程被称为*挖矿*。挖矿是非常耗能的，所需的能源数量在不断增加，这可能导致不健康的竞争。\n\n### 权益证明和铸币\n\n权益证明是一种生成区块的新方法。由 [Aggelos Kiayias 教授](https://iohk.io/team/aggelos-kiayias/)领导的 IOHK 科学家们设计了第一个可证明的，称为乌洛波罗斯的权益证明算法。乌洛波罗斯是卡尔达诺结算层的核心。研究小组已经发表了一篇[白皮书](https://iohk.io/research/papers/a-provably-secure-proof-of-stake-blockchain-protocol/) ，这封白皮书对于那些拥有加密货币理论背景的人来说是值得一读的。权益证明的核心思想是，不要浪费电力来解决计算繁重的问题，而是选择一个节点来铸造一个新的区块，其概率与这个节点的硬币数量成正相关。如果一个节点有整数个(&gt; 0)的 [slot](/cardano/proof-of-stake/#stake)，它被称为 slot 所有人。如果一个节点最终被选中来铸造一个区块，那么这个节点被称为 slot 领导者。您可以在[卡尔达诺结算层的股权证明](/cardano/proof-of-stake/)中了解更多关于该流程的信息。\n\n\n<!-- CARDANO_SL_README_BEGIN_2 -->\n## 卡尔达诺结算层之上\n\n\n卡尔达诺结算层被称为『层』是有原因的。这是卡尔达诺平台的第一个组件。最终，它将被扩展到一个控制层，作为一个可信的计算框架来评估一种特殊的证明，以确保一定的计算正确执行。在游戏和赌博中，这样的系统被用于验证随机数生成和游戏结果的真实性。伴随着侧链，它将有可能完成诸如在游戏中公平分配奖金的任务。但是控制层的应用远远超出了游戏和赌博。身份管理，信用系统等将成为卡尔达诺平台的一部分。我们将迭代卡尔达诺[钱包应用程序 Daedalus](https://github.com/input-output-hk/daedalus)，使其变成一个具有自动加密货币交易功能和合法加密货币交易功能的通用加密货币钱包。\n\n\n<!-- CARDANO_SL_README_END_2 -->\n",
+        "content": "---\nlayout: default\ntitle: 介绍\npath: '/cn/introduction'\npermalink: /introduction/cn/\ngroup: base\nlanguage: cn\nauthor: me\ndate: '06-09-2018'\nkeywords: 'index cn'\n---\n\n<!-- Reviewed at d0868afac50ba6ffcbd95054e65cbf77fa513082 -->\n\nindex\n亲爱的读者，本文档的目的是让您对于 Cardano 平台技术栈第一层即结算层有所了解。如果您理解了结算层是什么，我们建议您先阅读[论文和实现的差异](/cardano/differences/)，然后再阅读[协议和实现的文档](/technical/protocols/csl-application-level/)。\n\n本文档目标读者是 IOHK 的开发人员，第三方软件开发人员，审计和致力于实现卡尔达诺结算层或使用卡尔达诺结算层参考实现的咨询人员。\n\n<!-- CARDANO_SL_README_BEGIN_1 -->\n## 什么是卡尔达诺结算层?\n\nCardano SL（或卡尔达诺运算层）是由 [IOHK](https://iohk.io/team) 联合爱丁堡大学，雅典大学和康涅狄格大学共同设计开发的一种加密货币。卡尔达诺运算层是基于 Aggelos Kiayias，Alexander Russell，Bernardo David 和 Roman Oliynykov 的白皮书 [『乌洛波罗斯：可证明安全的权益证明协议』](https://iohk.io/research/papers/#9BKRHCSI)的 Haskell 实现。\n<!-- end -->\n\n您可以将卡尔达诺结算层视为基于比特币重新设计的针对比特币缺陷的自由修复。 有关卡尔达诺结算层和比特币之间的相似之处和差异的更多信息，请阅读[『卡尔达诺结算层为什么特别?』](http://cardanodocs.com/introduction/cn/#%E5%8D%A1%E5%B0%94%E8%BE%BE%E8%AF%BA%E8%BF%90%E7%AE%97%E5%B1%82%E4%B8%BA%E4%BB%80%E4%B9%88%E7%89%B9%E5%88%AB)。\n\n\n<!-- CARDANO_SL_README_END_1 -->\n\n## 加密货币基础\n\n\n在给出加密货币的定义之前，我们先来谈谈为什么我们在意数字货币，特别是加密货币。\n\n### 我们为什么在意?\n\n#### 速度\n\n与传统（也称为法定）中心银行货币，与日元或美元相反，电子货币不需要一个银行系统来转移价值。这一限制的解除，使用数字货币的速度要快于银行业务，尤其是在全球范围内。使用数字货币从大阪转移10美元到丹佛不再需要数天的时间。无论距离如何，所有交易都能迅速完成。\n\n\n#### 你掌控你自己的钱\n\n所有的商业银行账户所有者在收到支付请求后在合理的时间内只能支付一定的金额。银行体系对任何价值量都有限制，使个人无法迅速撤出或转移大量资金。有加密货币的情况下，持有一种称为**密钥**这一特殊信息的人就可以随意花钱。没有其他实体有权操纵用户拥有的价值。\n\n\n#### 匿名\n\n人们可以根据需要，拥有任意多的加密货币地址，从不同的地址接收，消费资产。经营电子商务商店的商家可以拥有一组收款和退款的地址，以及一个用于他们自身需要的单独的个人『钱包』。通过统一的接口控制所有这些钱包，并且不需要登录到多个支付平台，这使得该过程非常节省时间。\n\n#### 安全\n\n你的钱就像可用于消费的**密钥**一样安全。这意味着将密钥存储在保险箱中的 USB 闪存上相当于让纸币处于安全状态。即使进行了成功的网络攻击，也绝对没有人能够窃取这笔钱。\n\n#### 扩展性\n\n使用一种称为[侧链](https://www.blockstream.com/sidechains.pdf)的方法，以及通用加密货币，如卡尔达诺结算层和比特币，就可以启用特定领域的加密货币，例如以太经典。这样一来，通过特定领域的加密货币开发的任何创新产品都可以让参与者在通用的加密货币中保持价值。这样的应用程序的例子有身份管理，游戏和赌博，以及可验证计算。\n\n\n### 什么是加密货币?\n\n加密货币是一种数字货币形式，使用密码来控制价值。密码学提供了一种生成任何类型信息的真实真实性证据的方法。这就是所谓的*数字签名*。在加密货币中，我们通过签署和发送交易到网络并接收已确认的交易块，生成一个总账（一个提供每个地址有多少钱的信息的数据库）。加密货币通常是分散的，这意味着来自全球各地的许多人通过运行加密货币节点参与总账的生成。因此，必须达成关于总账状况的共识。下一节讨论实现这种共识的两个最重要的方法。\n\n\n## 卡尔达诺结算层为什么特别\n\n<!-- v0.1.0.0 -->\n\n虽然比特币和卡尔达诺结算层之间有相似之处，但这两个加密货币之间也有很多不同之处。最显着的区别是，比特币是工作量证明类型的加密货币，而卡尔达诺结算层使用权益证明的方法达成共识。这鼓励诚信和长期的参与。\n\n\n### 共识算法的目的\n\n\n共识算法被用来产生新的交易区块，使账本更新状态。每当有人发布一个交易区块时，他们（或者说他们的运行加密货币协议的节点）就必须附上他们已经证明的证据。下面讨论两种类型的证明。\n\n\n### 工作量证明和挖矿\n\n工作量证明是加密货币最普遍的共识算法类型。它起源于比特币，加密货币就是这么工作的。为了生成工作证明，计算机必须解决一个挑战。这是难以解决的计算繁重的问题，但解决方案很容易验证。当一台基于网络的工作量证明的计算机找到一个解决方案时，它会将交易发布于同它一起计算的其他计算机。这台计算机会因为产生区块得到交易费和奖励。整个过程被称为*挖矿*。挖矿是非常耗能的，所需的能源数量在不断增加，这可能导致不健康的竞争。\n\n### 权益证明和铸币\n\n权益证明是一种生成区块的新方法。由 [Aggelos Kiayias 教授](https://iohk.io/team/aggelos-kiayias/)领导的 IOHK 科学家们设计了第一个可证明的，称为乌洛波罗斯的权益证明算法。乌洛波罗斯是卡尔达诺结算层的核心。研究小组已经发表了一篇[白皮书](https://iohk.io/research/papers/a-provably-secure-proof-of-stake-blockchain-protocol/) ，这封白皮书对于那些拥有加密货币理论背景的人来说是值得一读的。权益证明的核心思想是，不要浪费电力来解决计算繁重的问题，而是选择一个节点来铸造一个新的区块，其概率与这个节点的硬币数量成正相关。如果一个节点有整数个(&gt; 0)的 [slot](/cardano/proof-of-stake/#stake)，它被称为 slot 所有人。如果一个节点最终被选中来铸造一个区块，那么这个节点被称为 slot 领导者。您可以在[卡尔达诺结算层的股权证明](/cardano/proof-of-stake/)中了解更多关于该流程的信息。\n\n\n<!-- CARDANO_SL_README_BEGIN_2 -->\n## 卡尔达诺结算层之上\n\n\n卡尔达诺结算层被称为『层』是有原因的。这是卡尔达诺平台的第一个组件。最终，它将被扩展到一个控制层，作为一个可信的计算框架来评估一种特殊的证明，以确保一定的计算正确执行。在游戏和赌博中，这样的系统被用于验证随机数生成和游戏结果的真实性。伴随着侧链，它将有可能完成诸如在游戏中公平分配奖金的任务。但是控制层的应用远远超出了游戏和赌博。身份管理，信用系统等将成为卡尔达诺平台的一部分。我们将迭代卡尔达诺[钱包应用程序 Daedalus](https://github.com/input-output-hk/daedalus)，使其变成一个具有自动加密货币交易功能和合法加密货币交易功能的通用加密货币钱包。\n\n\n<!-- CARDANO_SL_README_END_2 -->\n",
         "type": "MarkdownRemark",
-        "contentDigest": "5e0a0f35f2a68185f88548fdab9fc82c",
+        "contentDigest": "4e8d6d06ccd63d038457fda0eaed2c93",
         "owner": "gatsby-transformer-remark"
       },
       "frontmatter": {
@@ -2029,45 +2155,46 @@
         "language": "cn",
         "author": "me",
         "date": "06-09-2018",
+        "keywords": "index cn",
         "_PARENT": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2017-01-01-index.cn.md absPath of file",
         "parent": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2017-01-01-index.cn.md absPath of file"
       },
-      "excerpt": "",
-      "rawMarkdownBody": "\n<!-- Reviewed at d0868afac50ba6ffcbd95054e65cbf77fa513082 -->\n\n亲爱的读者，本文档的目的是让您对于 Cardano 平台技术栈第一层即结算层有所了解。如果您理解了结算层是什么，我们建议您先阅读[论文和实现的差异](/cardano/differences/)，然后再阅读[协议和实现的文档](/technical/protocols/csl-application-level/)。\n\n本文档目标读者是 IOHK 的开发人员，第三方软件开发人员，审计和致力于实现卡尔达诺结算层或使用卡尔达诺结算层参考实现的咨询人员。\n\n<!-- CARDANO_SL_README_BEGIN_1 -->\n## 什么是卡尔达诺结算层?\n\nCardano SL（或卡尔达诺运算层）是由 [IOHK](https://iohk.io/team) 联合爱丁堡大学，雅典大学和康涅狄格大学共同设计开发的一种加密货币。卡尔达诺运算层是基于 Aggelos Kiayias，Alexander Russell，Bernardo David 和 Roman Oliynykov 的白皮书 [『乌洛波罗斯：可证明安全的权益证明协议』](https://iohk.io/research/papers/#9BKRHCSI)的 Haskell 实现。\n\n您可以将卡尔达诺结算层视为基于比特币重新设计的针对比特币缺陷的自由修复。 有关卡尔达诺结算层和比特币之间的相似之处和差异的更多信息，请阅读[『卡尔达诺结算层为什么特别?』](http://cardanodocs.com/introduction/cn/#%E5%8D%A1%E5%B0%94%E8%BE%BE%E8%AF%BA%E8%BF%90%E7%AE%97%E5%B1%82%E4%B8%BA%E4%BB%80%E4%B9%88%E7%89%B9%E5%88%AB)。\n\n\n<!-- CARDANO_SL_README_END_1 -->\n\n## 加密货币基础\n\n\n在给出加密货币的定义之前，我们先来谈谈为什么我们在意数字货币，特别是加密货币。\n\n### 我们为什么在意?\n\n#### 速度\n\n与传统（也称为法定）中心银行货币，与日元或美元相反，电子货币不需要一个银行系统来转移价值。这一限制的解除，使用数字货币的速度要快于银行业务，尤其是在全球范围内。使用数字货币从大阪转移10美元到丹佛不再需要数天的时间。无论距离如何，所有交易都能迅速完成。\n\n\n#### 你掌控你自己的钱\n\n所有的商业银行账户所有者在收到支付请求后在合理的时间内只能支付一定的金额。银行体系对任何价值量都有限制，使个人无法迅速撤出或转移大量资金。有加密货币的情况下，持有一种称为**密钥**这一特殊信息的人就可以随意花钱。没有其他实体有权操纵用户拥有的价值。\n\n\n#### 匿名\n\n人们可以根据需要，拥有任意多的加密货币地址，从不同的地址接收，消费资产。经营电子商务商店的商家可以拥有一组收款和退款的地址，以及一个用于他们自身需要的单独的个人『钱包』。通过统一的接口控制所有这些钱包，并且不需要登录到多个支付平台，这使得该过程非常节省时间。\n\n#### 安全\n\n你的钱就像可用于消费的**密钥**一样安全。这意味着将密钥存储在保险箱中的 USB 闪存上相当于让纸币处于安全状态。即使进行了成功的网络攻击，也绝对没有人能够窃取这笔钱。\n\n#### 扩展性\n\n使用一种称为[侧链](https://www.blockstream.com/sidechains.pdf)的方法，以及通用加密货币，如卡尔达诺结算层和比特币，就可以启用特定领域的加密货币，例如以太经典。这样一来，通过特定领域的加密货币开发的任何创新产品都可以让参与者在通用的加密货币中保持价值。这样的应用程序的例子有身份管理，游戏和赌博，以及可验证计算。\n\n\n### 什么是加密货币?\n\n加密货币是一种数字货币形式，使用密码来控制价值。密码学提供了一种生成任何类型信息的真实真实性证据的方法。这就是所谓的*数字签名*。在加密货币中，我们通过签署和发送交易到网络并接收已确认的交易块，生成一个总账（一个提供每个地址有多少钱的信息的数据库）。加密货币通常是分散的，这意味着来自全球各地的许多人通过运行加密货币节点参与总账的生成。因此，必须达成关于总账状况的共识。下一节讨论实现这种共识的两个最重要的方法。\n\n\n## 卡尔达诺结算层为什么特别\n\n<!-- v0.1.0.0 -->\n\n虽然比特币和卡尔达诺结算层之间有相似之处，但这两个加密货币之间也有很多不同之处。最显着的区别是，比特币是工作量证明类型的加密货币，而卡尔达诺结算层使用权益证明的方法达成共识。这鼓励诚信和长期的参与。\n\n\n### 共识算法的目的\n\n\n共识算法被用来产生新的交易区块，使账本更新状态。每当有人发布一个交易区块时，他们（或者说他们的运行加密货币协议的节点）就必须附上他们已经证明的证据。下面讨论两种类型的证明。\n\n\n### 工作量证明和挖矿\n\n工作量证明是加密货币最普遍的共识算法类型。它起源于比特币，加密货币就是这么工作的。为了生成工作证明，计算机必须解决一个挑战。这是难以解决的计算繁重的问题，但解决方案很容易验证。当一台基于网络的工作量证明的计算机找到一个解决方案时，它会将交易发布于同它一起计算的其他计算机。这台计算机会因为产生区块得到交易费和奖励。整个过程被称为*挖矿*。挖矿是非常耗能的，所需的能源数量在不断增加，这可能导致不健康的竞争。\n\n### 权益证明和铸币\n\n权益证明是一种生成区块的新方法。由 [Aggelos Kiayias 教授](https://iohk.io/team/aggelos-kiayias/)领导的 IOHK 科学家们设计了第一个可证明的，称为乌洛波罗斯的权益证明算法。乌洛波罗斯是卡尔达诺结算层的核心。研究小组已经发表了一篇[白皮书](https://iohk.io/research/papers/a-provably-secure-proof-of-stake-blockchain-protocol/) ，这封白皮书对于那些拥有加密货币理论背景的人来说是值得一读的。权益证明的核心思想是，不要浪费电力来解决计算繁重的问题，而是选择一个节点来铸造一个新的区块，其概率与这个节点的硬币数量成正相关。如果一个节点有整数个(&gt; 0)的 [slot](/cardano/proof-of-stake/#stake)，它被称为 slot 所有人。如果一个节点最终被选中来铸造一个区块，那么这个节点被称为 slot 领导者。您可以在[卡尔达诺结算层的股权证明](/cardano/proof-of-stake/)中了解更多关于该流程的信息。\n\n\n<!-- CARDANO_SL_README_BEGIN_2 -->\n## 卡尔达诺结算层之上\n\n\n卡尔达诺结算层被称为『层』是有原因的。这是卡尔达诺平台的第一个组件。最终，它将被扩展到一个控制层，作为一个可信的计算框架来评估一种特殊的证明，以确保一定的计算正确执行。在游戏和赌博中，这样的系统被用于验证随机数生成和游戏结果的真实性。伴随着侧链，它将有可能完成诸如在游戏中公平分配奖金的任务。但是控制层的应用远远超出了游戏和赌博。身份管理，信用系统等将成为卡尔达诺平台的一部分。我们将迭代卡尔达诺[钱包应用程序 Daedalus](https://github.com/input-output-hk/daedalus)，使其变成一个具有自动加密货币交易功能和合法加密货币交易功能的通用加密货币钱包。\n\n\n<!-- CARDANO_SL_README_END_2 -->\n",
+      "excerpt": "\n<!-- Reviewed at d0868afac50ba6ffcbd95054e65cbf77fa513082 -->\n\nindex\n亲爱的读者，本文档的目的是让您对于 Cardano 平台技术栈第一层即结算层有所了解。如果您理解了结算层是什么，我们建议您先阅读[论文和实现的差异](/cardano/differences/)，然后再阅读[协议和实现的文档](/technical/protocols/csl-application-level/)。\n\n本文档目标读者是 IOHK 的开发人员，第三方软件开发人员，审计和致力于实现卡尔达诺结算层或使用卡尔达诺结算层参考实现的咨询人员。\n\n<!-- CARDANO_SL_README_BEGIN_1 -->\n## 什么是卡尔达诺结算层?\n\nCardano SL（或卡尔达诺运算层）是由 [IOHK](https://iohk.io/team) 联合爱丁堡大学，雅典大学和康涅狄格大学共同设计开发的一种加密货币。卡尔达诺运算层是基于 Aggelos Kiayias，Alexander Russell，Bernardo David 和 Roman Oliynykov 的白皮书 [『乌洛波罗斯：可证明安全的权益证明协议』](https://iohk.io/research/papers/#9BKRHCSI)的 Haskell 实现。\n",
+      "rawMarkdownBody": "\n<!-- Reviewed at d0868afac50ba6ffcbd95054e65cbf77fa513082 -->\n\nindex\n亲爱的读者，本文档的目的是让您对于 Cardano 平台技术栈第一层即结算层有所了解。如果您理解了结算层是什么，我们建议您先阅读[论文和实现的差异](/cardano/differences/)，然后再阅读[协议和实现的文档](/technical/protocols/csl-application-level/)。\n\n本文档目标读者是 IOHK 的开发人员，第三方软件开发人员，审计和致力于实现卡尔达诺结算层或使用卡尔达诺结算层参考实现的咨询人员。\n\n<!-- CARDANO_SL_README_BEGIN_1 -->\n## 什么是卡尔达诺结算层?\n\nCardano SL（或卡尔达诺运算层）是由 [IOHK](https://iohk.io/team) 联合爱丁堡大学，雅典大学和康涅狄格大学共同设计开发的一种加密货币。卡尔达诺运算层是基于 Aggelos Kiayias，Alexander Russell，Bernardo David 和 Roman Oliynykov 的白皮书 [『乌洛波罗斯：可证明安全的权益证明协议』](https://iohk.io/research/papers/#9BKRHCSI)的 Haskell 实现。\n<!-- end -->\n\n您可以将卡尔达诺结算层视为基于比特币重新设计的针对比特币缺陷的自由修复。 有关卡尔达诺结算层和比特币之间的相似之处和差异的更多信息，请阅读[『卡尔达诺结算层为什么特别?』](http://cardanodocs.com/introduction/cn/#%E5%8D%A1%E5%B0%94%E8%BE%BE%E8%AF%BA%E8%BF%90%E7%AE%97%E5%B1%82%E4%B8%BA%E4%BB%80%E4%B9%88%E7%89%B9%E5%88%AB)。\n\n\n<!-- CARDANO_SL_README_END_1 -->\n\n## 加密货币基础\n\n\n在给出加密货币的定义之前，我们先来谈谈为什么我们在意数字货币，特别是加密货币。\n\n### 我们为什么在意?\n\n#### 速度\n\n与传统（也称为法定）中心银行货币，与日元或美元相反，电子货币不需要一个银行系统来转移价值。这一限制的解除，使用数字货币的速度要快于银行业务，尤其是在全球范围内。使用数字货币从大阪转移10美元到丹佛不再需要数天的时间。无论距离如何，所有交易都能迅速完成。\n\n\n#### 你掌控你自己的钱\n\n所有的商业银行账户所有者在收到支付请求后在合理的时间内只能支付一定的金额。银行体系对任何价值量都有限制，使个人无法迅速撤出或转移大量资金。有加密货币的情况下，持有一种称为**密钥**这一特殊信息的人就可以随意花钱。没有其他实体有权操纵用户拥有的价值。\n\n\n#### 匿名\n\n人们可以根据需要，拥有任意多的加密货币地址，从不同的地址接收，消费资产。经营电子商务商店的商家可以拥有一组收款和退款的地址，以及一个用于他们自身需要的单独的个人『钱包』。通过统一的接口控制所有这些钱包，并且不需要登录到多个支付平台，这使得该过程非常节省时间。\n\n#### 安全\n\n你的钱就像可用于消费的**密钥**一样安全。这意味着将密钥存储在保险箱中的 USB 闪存上相当于让纸币处于安全状态。即使进行了成功的网络攻击，也绝对没有人能够窃取这笔钱。\n\n#### 扩展性\n\n使用一种称为[侧链](https://www.blockstream.com/sidechains.pdf)的方法，以及通用加密货币，如卡尔达诺结算层和比特币，就可以启用特定领域的加密货币，例如以太经典。这样一来，通过特定领域的加密货币开发的任何创新产品都可以让参与者在通用的加密货币中保持价值。这样的应用程序的例子有身份管理，游戏和赌博，以及可验证计算。\n\n\n### 什么是加密货币?\n\n加密货币是一种数字货币形式，使用密码来控制价值。密码学提供了一种生成任何类型信息的真实真实性证据的方法。这就是所谓的*数字签名*。在加密货币中，我们通过签署和发送交易到网络并接收已确认的交易块，生成一个总账（一个提供每个地址有多少钱的信息的数据库）。加密货币通常是分散的，这意味着来自全球各地的许多人通过运行加密货币节点参与总账的生成。因此，必须达成关于总账状况的共识。下一节讨论实现这种共识的两个最重要的方法。\n\n\n## 卡尔达诺结算层为什么特别\n\n<!-- v0.1.0.0 -->\n\n虽然比特币和卡尔达诺结算层之间有相似之处，但这两个加密货币之间也有很多不同之处。最显着的区别是，比特币是工作量证明类型的加密货币，而卡尔达诺结算层使用权益证明的方法达成共识。这鼓励诚信和长期的参与。\n\n\n### 共识算法的目的\n\n\n共识算法被用来产生新的交易区块，使账本更新状态。每当有人发布一个交易区块时，他们（或者说他们的运行加密货币协议的节点）就必须附上他们已经证明的证据。下面讨论两种类型的证明。\n\n\n### 工作量证明和挖矿\n\n工作量证明是加密货币最普遍的共识算法类型。它起源于比特币，加密货币就是这么工作的。为了生成工作证明，计算机必须解决一个挑战。这是难以解决的计算繁重的问题，但解决方案很容易验证。当一台基于网络的工作量证明的计算机找到一个解决方案时，它会将交易发布于同它一起计算的其他计算机。这台计算机会因为产生区块得到交易费和奖励。整个过程被称为*挖矿*。挖矿是非常耗能的，所需的能源数量在不断增加，这可能导致不健康的竞争。\n\n### 权益证明和铸币\n\n权益证明是一种生成区块的新方法。由 [Aggelos Kiayias 教授](https://iohk.io/team/aggelos-kiayias/)领导的 IOHK 科学家们设计了第一个可证明的，称为乌洛波罗斯的权益证明算法。乌洛波罗斯是卡尔达诺结算层的核心。研究小组已经发表了一篇[白皮书](https://iohk.io/research/papers/a-provably-secure-proof-of-stake-blockchain-protocol/) ，这封白皮书对于那些拥有加密货币理论背景的人来说是值得一读的。权益证明的核心思想是，不要浪费电力来解决计算繁重的问题，而是选择一个节点来铸造一个新的区块，其概率与这个节点的硬币数量成正相关。如果一个节点有整数个(&gt; 0)的 [slot](/cardano/proof-of-stake/#stake)，它被称为 slot 所有人。如果一个节点最终被选中来铸造一个区块，那么这个节点被称为 slot 领导者。您可以在[卡尔达诺结算层的股权证明](/cardano/proof-of-stake/)中了解更多关于该流程的信息。\n\n\n<!-- CARDANO_SL_README_BEGIN_2 -->\n## 卡尔达诺结算层之上\n\n\n卡尔达诺结算层被称为『层』是有原因的。这是卡尔达诺平台的第一个组件。最终，它将被扩展到一个控制层，作为一个可信的计算框架来评估一种特殊的证明，以确保一定的计算正确执行。在游戏和赌博中，这样的系统被用于验证随机数生成和游戏结果的真实性。伴随着侧链，它将有可能完成诸如在游戏中公平分配奖金的任务。但是控制层的应用远远超出了游戏和赌博。身份管理，信用系统等将成为卡尔达诺平台的一部分。我们将迭代卡尔达诺[钱包应用程序 Daedalus](https://github.com/input-output-hk/daedalus)，使其变成一个具有自动加密货币交易功能和合法加密货币交易功能的通用加密货币钱包。\n\n\n<!-- CARDANO_SL_README_END_2 -->\n",
       "fileAbsolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2017-01-01-index.cn.md"
     },
-    "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md absPath of file >>> MarkdownRemark",
+    "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file >>> MarkdownRemark",
       "children": [],
-      "parent": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md absPath of file",
+      "parent": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file",
       "internal": {
-        "content": "---\nlayout: default\ntitle: Glossary\npermalink: /glossary/\npath: '/en/glossary/'\ngroup: base\nlanguage: en\n---\n\n<!-- Reviewed at d0d6c2fedefb642744a24b4b0a6d8d7ad11532f6 -->\n\n# Glossary\n\n## Ada\n\nThe name of our currency, named in honor of [Ada\nLovelace](https://en.wikipedia.org/wiki/Ada_Lovelace).\n\n## Address\n\nThe unique identifier of a [node](#node). Please read about [Addresses in\nCardano SL](/cardano/addresses/) for more details.\n\n## Balance\n\nPlease read about [Balance and Stake in Cardano SL](/cardano/balance-and-stake/)\nfor explanation.\n\n## Block\n\nA fundamental part of a [Ledger](#ledger). Please read about [Blocks in Cardano\nSL](/technical/blocks/) for technical details.\n\n## Blockchain\n\nPlease see [Ledger](#ledger).\n\n## Cardano SL\n\nCardano SL (or Cardano Settlement Layer) is a decentralized cryptographic\ncurrency designed and developed by [IOHK](https://iohk.io/team). Named in honor\nof [Gerolamo Cardano](https://en.wikipedia.org/wiki/Gerolamo_Cardano).\n\n## Coin Tossing\n\nA Coin Tossing is a protocol that allows two or more parties to obtain\na uniformly random value. We use Coin Tossing protocol as a base of [SSC](#ssc).\nPlease read [paper](#paper) (page 36) for more details about Coin Tossing.\n\n## Consensus Algorithm\n\nA way for a decentralized system to reach a consistent view on shared\ncollections of data. Cardano SL uses the [Ouroboros Consensus\nAlgorithm](/cardano/proof-of-stake/), which is an algorithm based on\n[Proof of Stake](#proof-of-stake).\n\n## Cryptocurrency\n\nA computer system which uses cryptographic protocols to generate a ledger.\nPlease read about [Cryptocurrency Basics](/introduction/#cryptocurrency-basics)\nfor more details.\n\n## Daedalus\n\nCardano SL wallet application. It provides a GUI for users, so they can access\ntheir funds, send and receive transactions, etc. Please read about [Cardano SL\nWallet Frontend](/technical/wallet-frontend/) for more details.\n\n## Decentralization\n\nA notion of a computer system operating through interaction of independent\nnodes. In case of maintaining a shared data collection such as a ledger, a\nconsensus is required for consistency and reliability of data.\n\n## Epoch\n\nA bigger period of time for which we know in advance who will have the right to\ngenerate a block in each slot. Please read [paper](#paper) (page 3) for\ntechnical details.\n\n## Follow The Satoshi\n\nA mechanism whereby stakeholders are selected at random to forge a new block in\nthe blockchain, with a proportional chance to get elected depending on their\namount of stake in the protocol.\n\n## Guaranteed Output Delivery\n\nGuaranteed output delivery is a mechanism that proves that the honest parties\nare guaranteed to successfully complete the multiparty computation (MPC). We\nuse G.O.D. in [SSC](#ssc).\n\n## Honest Majority\n\nHonest majority is a situation when the number of honest participants is strictly\ngreater than the number of adversaries, i.e. at least 50% + 1. Honest majority \nis assumed by default.\n\n## Kademlia\n\nPlease see [Peer Discovery](#peer-discovery).\n\n## Leader Election\n\nA process of picking who will generate blocks during the next epoch. Leaders are\nelected with a probability proportional to their stake (see [Proof of\nStake](#proof-of-stake), [Follow the Satoshi](#follow-the-satoshi)).\n\n## Ledger\n\nA collection of data that keeps track of value assigned to individuals. Please\nread [paper](#paper) (page 32) for technical details.\n\n## Lovelace\n\nName of a smallest unit of our currency. Named in honor of [Ada\nLovelace](https://en.wikipedia.org/wiki/Ada_Lovelace).\n\n## Minting\n\nA process of a new block creation in [Proof of\nStake](/introduction/#proof-of-stake-and-minting) systems.\n\n## Node\n\nA computer program that participates in a decentralized protocol system. Please\nread [High-level technical overview](/technical/#high-level-overview) for more\ndetails.\n\n## Paper\n\nOfficial protocol report [Ouroboros: A Provably Secure Proof-of-Stake Blockchain\nProtocol](https://eprint.iacr.org/2016/889). Please notice that Cardano SL\nimplementation differs from the paper, [read about\ndifferences](/cardano/differences/) for more details.\n\n## Peer Discovery\n\nA way how a node can find other nodes after running. Peer discovery we use is\nbased on Kademlia DHT. Please read [a Kademlia\npaper](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf)\nfor technical details.\n\n## Plutus\n\nStrictly typed pure functional programming language used for defining smart\ncontracts in Cardano. Please read about\n[Plutus](/technical/plutus/introduction/) for more details.\n\n## Proof of Stake\n\nOuroboros Proof of Stake algorithm is the most important part of the [protocol](#paper).\nIt defines the way [nodes](#node) reach consensus about the state of [ledger](#ledger).\nPlease read about [Ouroboros Proof of Stake Algorithm](/cardano/proof-of-stake/)\nfor more details.\n\n## PVSS\n\nPVSS (Publicly Verifiable Secret Sharing) is a cryptographic scheme we use in [SSC](#ssc).\nPlease read about [PVSS implementation in Cardano SL](/technical/pvss/) for more details.\n\n## Richman\n\nStakeholder with stake enough for participation in some action. Particularly,\nthere are three kinds of such actions: randomness generation (for [slot leaders\nelections process](/technical/leader-selection/)),\n[heavyweight stake delegation](/technical/delegation/#heavyweight-delegation)\nand voting for [update proposals](/cardano/update-mechanism/#application-update-sign-and-announce).\n\n## Signing\n\nA way to generate a proof of genuine authenticity of any kind of information we\nuse in [cryptocurrency](#cryptocurrency).\n\n## Slot\n\nA small period of physical time that is significantly larger than the expected\ndifference in clocks on different nodes. Please read [paper](#paper) (page 4) for\ntechnical details.\n\n## Slot Leader\n\nA slot leader is a node which was elected to have a right to create a block in\nthe current slot. Please read [paper](#paper) (page 7) for technical details.\n\n## SSC\n\nSSC (Shared Seed Computation) is a part of [slot leader election](#leader-election)\nprocess. This part is implemented as a [Coin Tossing](#coin-tossing) protocol with\n[Guaranteed Output Delivery](#guaranteed-output-delivery). As a result of SSC we get\na randomness which will be used in [Follow The Satoshi](#follow-the-satoshi) mechanism.\n\n## Stake\n\nPlease read about [Balance and Stake in Cardano SL](/cardano/balance-and-stake/)\nfor explanation.\n\n## Stakeholder\n\nA node with a positive stake.\n\n## Transaction\n\nThe data that represents the act of transferring value. Please read about\n[Transactions in Cardano SL](/cardano/transactions/) for more details.\n\n## Transaction Fees\n\nPlease read about [Transaction Fees in Cardano SL](/cardano/transaction-fees/)\nfor explanation.\n",
+        "content": "---\npath: '/cn/post-1'\ntitle: 'Post 1 (CN)'\ndate: '06-09-2018'\nauthor: 'Tom V'\nlanguage: 'cn'\nkeywords: 'post1 one cn baz'\n---\n\n##你好!\n\nbaz\nCillum enim sint excepteur laborum mollit nulla dolore dolore id pariatur. Ea ullamco ex aute aliquip deserunt. Quis deserunt fugiat adipisicing ea cupidatat. Duis anim nisi officia sit irure. Esse Lorem exercitation ex ut.\n<!-- end -->\n\nTempor duis nisi ipsum deserunt Lorem duis voluptate aliqua deserunt ipsum occaecat consectetur velit ipsum. Minim eu eu culpa deserunt sit quis reprehenderit velit sunt esse non irure quis velit. Incididunt magna ipsum anim cillum excepteur proident excepteur aliquip tempor.",
         "type": "MarkdownRemark",
-        "contentDigest": "6b439c2ed73bff187c05eb72c594127e",
+        "contentDigest": "35b541c2759c30c01e21a0bc98f11620",
         "owner": "gatsby-transformer-remark"
       },
       "frontmatter": {
-        "title": "Glossary",
-        "layout": "default",
-        "permalink": "/glossary/",
-        "path": "/en/glossary/",
-        "group": "base",
-        "language": "en",
-        "_PARENT": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md absPath of file",
-        "parent": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md absPath of file"
+        "title": "Post 1 (CN)",
+        "path": "/cn/post-1",
+        "date": "06-09-2018",
+        "author": "Tom V",
+        "language": "cn",
+        "keywords": "post1 one cn baz",
+        "_PARENT": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file",
+        "parent": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file"
       },
-      "excerpt": "",
-      "rawMarkdownBody": "\n<!-- Reviewed at d0d6c2fedefb642744a24b4b0a6d8d7ad11532f6 -->\n\n# Glossary\n\n## Ada\n\nThe name of our currency, named in honor of [Ada\nLovelace](https://en.wikipedia.org/wiki/Ada_Lovelace).\n\n## Address\n\nThe unique identifier of a [node](#node). Please read about [Addresses in\nCardano SL](/cardano/addresses/) for more details.\n\n## Balance\n\nPlease read about [Balance and Stake in Cardano SL](/cardano/balance-and-stake/)\nfor explanation.\n\n## Block\n\nA fundamental part of a [Ledger](#ledger). Please read about [Blocks in Cardano\nSL](/technical/blocks/) for technical details.\n\n## Blockchain\n\nPlease see [Ledger](#ledger).\n\n## Cardano SL\n\nCardano SL (or Cardano Settlement Layer) is a decentralized cryptographic\ncurrency designed and developed by [IOHK](https://iohk.io/team). Named in honor\nof [Gerolamo Cardano](https://en.wikipedia.org/wiki/Gerolamo_Cardano).\n\n## Coin Tossing\n\nA Coin Tossing is a protocol that allows two or more parties to obtain\na uniformly random value. We use Coin Tossing protocol as a base of [SSC](#ssc).\nPlease read [paper](#paper) (page 36) for more details about Coin Tossing.\n\n## Consensus Algorithm\n\nA way for a decentralized system to reach a consistent view on shared\ncollections of data. Cardano SL uses the [Ouroboros Consensus\nAlgorithm](/cardano/proof-of-stake/), which is an algorithm based on\n[Proof of Stake](#proof-of-stake).\n\n## Cryptocurrency\n\nA computer system which uses cryptographic protocols to generate a ledger.\nPlease read about [Cryptocurrency Basics](/introduction/#cryptocurrency-basics)\nfor more details.\n\n## Daedalus\n\nCardano SL wallet application. It provides a GUI for users, so they can access\ntheir funds, send and receive transactions, etc. Please read about [Cardano SL\nWallet Frontend](/technical/wallet-frontend/) for more details.\n\n## Decentralization\n\nA notion of a computer system operating through interaction of independent\nnodes. In case of maintaining a shared data collection such as a ledger, a\nconsensus is required for consistency and reliability of data.\n\n## Epoch\n\nA bigger period of time for which we know in advance who will have the right to\ngenerate a block in each slot. Please read [paper](#paper) (page 3) for\ntechnical details.\n\n## Follow The Satoshi\n\nA mechanism whereby stakeholders are selected at random to forge a new block in\nthe blockchain, with a proportional chance to get elected depending on their\namount of stake in the protocol.\n\n## Guaranteed Output Delivery\n\nGuaranteed output delivery is a mechanism that proves that the honest parties\nare guaranteed to successfully complete the multiparty computation (MPC). We\nuse G.O.D. in [SSC](#ssc).\n\n## Honest Majority\n\nHonest majority is a situation when the number of honest participants is strictly\ngreater than the number of adversaries, i.e. at least 50% + 1. Honest majority \nis assumed by default.\n\n## Kademlia\n\nPlease see [Peer Discovery](#peer-discovery).\n\n## Leader Election\n\nA process of picking who will generate blocks during the next epoch. Leaders are\nelected with a probability proportional to their stake (see [Proof of\nStake](#proof-of-stake), [Follow the Satoshi](#follow-the-satoshi)).\n\n## Ledger\n\nA collection of data that keeps track of value assigned to individuals. Please\nread [paper](#paper) (page 32) for technical details.\n\n## Lovelace\n\nName of a smallest unit of our currency. Named in honor of [Ada\nLovelace](https://en.wikipedia.org/wiki/Ada_Lovelace).\n\n## Minting\n\nA process of a new block creation in [Proof of\nStake](/introduction/#proof-of-stake-and-minting) systems.\n\n## Node\n\nA computer program that participates in a decentralized protocol system. Please\nread [High-level technical overview](/technical/#high-level-overview) for more\ndetails.\n\n## Paper\n\nOfficial protocol report [Ouroboros: A Provably Secure Proof-of-Stake Blockchain\nProtocol](https://eprint.iacr.org/2016/889). Please notice that Cardano SL\nimplementation differs from the paper, [read about\ndifferences](/cardano/differences/) for more details.\n\n## Peer Discovery\n\nA way how a node can find other nodes after running. Peer discovery we use is\nbased on Kademlia DHT. Please read [a Kademlia\npaper](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf)\nfor technical details.\n\n## Plutus\n\nStrictly typed pure functional programming language used for defining smart\ncontracts in Cardano. Please read about\n[Plutus](/technical/plutus/introduction/) for more details.\n\n## Proof of Stake\n\nOuroboros Proof of Stake algorithm is the most important part of the [protocol](#paper).\nIt defines the way [nodes](#node) reach consensus about the state of [ledger](#ledger).\nPlease read about [Ouroboros Proof of Stake Algorithm](/cardano/proof-of-stake/)\nfor more details.\n\n## PVSS\n\nPVSS (Publicly Verifiable Secret Sharing) is a cryptographic scheme we use in [SSC](#ssc).\nPlease read about [PVSS implementation in Cardano SL](/technical/pvss/) for more details.\n\n## Richman\n\nStakeholder with stake enough for participation in some action. Particularly,\nthere are three kinds of such actions: randomness generation (for [slot leaders\nelections process](/technical/leader-selection/)),\n[heavyweight stake delegation](/technical/delegation/#heavyweight-delegation)\nand voting for [update proposals](/cardano/update-mechanism/#application-update-sign-and-announce).\n\n## Signing\n\nA way to generate a proof of genuine authenticity of any kind of information we\nuse in [cryptocurrency](#cryptocurrency).\n\n## Slot\n\nA small period of physical time that is significantly larger than the expected\ndifference in clocks on different nodes. Please read [paper](#paper) (page 4) for\ntechnical details.\n\n## Slot Leader\n\nA slot leader is a node which was elected to have a right to create a block in\nthe current slot. Please read [paper](#paper) (page 7) for technical details.\n\n## SSC\n\nSSC (Shared Seed Computation) is a part of [slot leader election](#leader-election)\nprocess. This part is implemented as a [Coin Tossing](#coin-tossing) protocol with\n[Guaranteed Output Delivery](#guaranteed-output-delivery). As a result of SSC we get\na randomness which will be used in [Follow The Satoshi](#follow-the-satoshi) mechanism.\n\n## Stake\n\nPlease read about [Balance and Stake in Cardano SL](/cardano/balance-and-stake/)\nfor explanation.\n\n## Stakeholder\n\nA node with a positive stake.\n\n## Transaction\n\nThe data that represents the act of transferring value. Please read about\n[Transactions in Cardano SL](/cardano/transactions/) for more details.\n\n## Transaction Fees\n\nPlease read about [Transaction Fees in Cardano SL](/cardano/transaction-fees/)\nfor explanation.\n",
-      "fileAbsolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md"
+      "excerpt": "\n##你好!\n\nbaz\nCillum enim sint excepteur laborum mollit nulla dolore dolore id pariatur. Ea ullamco ex aute aliquip deserunt. Quis deserunt fugiat adipisicing ea cupidatat. Duis anim nisi officia sit irure. Esse Lorem exercitation ex ut.\n",
+      "rawMarkdownBody": "\n##你好!\n\nbaz\nCillum enim sint excepteur laborum mollit nulla dolore dolore id pariatur. Ea ullamco ex aute aliquip deserunt. Quis deserunt fugiat adipisicing ea cupidatat. Duis anim nisi officia sit irure. Esse Lorem exercitation ex ut.\n<!-- end -->\n\nTempor duis nisi ipsum deserunt Lorem duis voluptate aliqua deserunt ipsum occaecat consectetur velit ipsum. Minim eu eu culpa deserunt sit quis reprehenderit velit sunt esse non irure quis velit. Incididunt magna ipsum anim cillum excepteur proident excepteur aliquip tempor.",
+      "fileAbsolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md"
     },
     "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2018-06-09-post1.en.md absPath of file >>> MarkdownRemark": {
       "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2018-06-09-post1.en.md absPath of file >>> MarkdownRemark",
       "children": [],
       "parent": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2018-06-09-post1.en.md absPath of file",
       "internal": {
-        "content": "---\npath: '/en/post-1'\ntitle: 'Post 1'\ndate: '06-09-2018'\nauthor: 'Charles Hoskinson'\nlanguage: 'en'\n---\n\n##This is Post 1\n\nCillum enim sint excepteur laborum mollit nulla dolore dolore id pariatur. Ea ullamco ex aute aliquip deserunt. Quis deserunt fugiat adipisicing ea cupidatat. Duis anim nisi officia sit irure. Esse Lorem exercitation ex ut.\n\nTempor duis nisi ipsum deserunt Lorem duis voluptate aliqua deserunt ipsum occaecat consectetur velit ipsum. Minim eu eu culpa deserunt sit quis reprehenderit velit sunt esse non irure quis velit. Incididunt magna ipsum anim cillum excepteur proident excepteur aliquip tempor.",
+        "content": "---\npath: '/en/post-1'\ntitle: 'Post 1'\ndate: '06-09-2018'\nauthor: 'Charles Hoskinson'\nlanguage: 'en'\nkeywords: 'post1 one'\n---\n\n##This is Post 1\n\npost1 one Cillum enim sint excepteur laborum mollit nulla dolore dolore id pariatur. Ea ullamco ex aute aliquip deserunt. Quis deserunt fugiat adipisicing ea cupidatat. Duis anim nisi officia sit irure. Esse Lorem exercitation ex ut.\n<!-- end -->\n\nTempor duis nisi ipsum deserunt Lorem duis voluptate aliqua deserunt ipsum occaecat consectetur velit ipsum. Minim eu eu culpa deserunt sit quis reprehenderit velit sunt esse non irure quis velit. Incididunt magna ipsum anim cillum excepteur proident excepteur aliquip tempor.",
         "type": "MarkdownRemark",
-        "contentDigest": "2d2302b3dcd22ff876675ebb5886911a",
+        "contentDigest": "122aa863708edf4dd14804d97ad649f8",
         "owner": "gatsby-transformer-remark"
       },
       "frontmatter": {
@@ -2076,55 +2203,31 @@
         "date": "06-09-2018",
         "author": "Charles Hoskinson",
         "language": "en",
+        "keywords": "post1 one",
         "_PARENT": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2018-06-09-post1.en.md absPath of file",
         "parent": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2018-06-09-post1.en.md absPath of file"
       },
-      "excerpt": "",
-      "rawMarkdownBody": "\n##This is Post 1\n\nCillum enim sint excepteur laborum mollit nulla dolore dolore id pariatur. Ea ullamco ex aute aliquip deserunt. Quis deserunt fugiat adipisicing ea cupidatat. Duis anim nisi officia sit irure. Esse Lorem exercitation ex ut.\n\nTempor duis nisi ipsum deserunt Lorem duis voluptate aliqua deserunt ipsum occaecat consectetur velit ipsum. Minim eu eu culpa deserunt sit quis reprehenderit velit sunt esse non irure quis velit. Incididunt magna ipsum anim cillum excepteur proident excepteur aliquip tempor.",
+      "excerpt": "\n##This is Post 1\n\npost1 one Cillum enim sint excepteur laborum mollit nulla dolore dolore id pariatur. Ea ullamco ex aute aliquip deserunt. Quis deserunt fugiat adipisicing ea cupidatat. Duis anim nisi officia sit irure. Esse Lorem exercitation ex ut.\n",
+      "rawMarkdownBody": "\n##This is Post 1\n\npost1 one Cillum enim sint excepteur laborum mollit nulla dolore dolore id pariatur. Ea ullamco ex aute aliquip deserunt. Quis deserunt fugiat adipisicing ea cupidatat. Duis anim nisi officia sit irure. Esse Lorem exercitation ex ut.\n<!-- end -->\n\nTempor duis nisi ipsum deserunt Lorem duis voluptate aliqua deserunt ipsum occaecat consectetur velit ipsum. Minim eu eu culpa deserunt sit quis reprehenderit velit sunt esse non irure quis velit. Incididunt magna ipsum anim cillum excepteur proident excepteur aliquip tempor.",
       "fileAbsolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2018-06-09-post1.en.md"
     },
-    "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md absPath of file >>> MarkdownRemark",
+    "SearchIndex < Site": {
+      "id": "SearchIndex < Site",
+      "parent": "___SOURCE___",
       "children": [],
-      "parent": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md absPath of file",
+      "pages": [
+        "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-13-for-contributors.en.md absPath of file >>> MarkdownRemark",
+        "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md absPath of file >>> MarkdownRemark",
+        "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md absPath of file >>> MarkdownRemark",
+        "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2017-01-01-index.cn.md absPath of file >>> MarkdownRemark",
+        "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file >>> MarkdownRemark",
+        "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2018-06-09-post1.en.md absPath of file >>> MarkdownRemark"
+      ],
       "internal": {
-        "content": "---\npath: '/en/post-2'\ntitle: 'Post 2'\ndate: '06-09-2018'\nauthor: 'Jonny S'\nlanguage: 'en'\n---\n\n##This is Post 2\n\nTempor duis nisi ipsum deserunt Lorem duis voluptate aliqua deserunt ipsum occaecat consectetur velit ipsum. Minim eu eu culpa deserunt sit quis reprehenderit velit sunt esse non irure quis velit. Incididunt magna ipsum anim cillum excepteur proident excepteur aliquip tempor.\n\nCillum enim sint excepteur laborum mollit nulla dolore dolore id pariatur. Ea ullamco ex aute aliquip deserunt. Quis deserunt fugiat adipisicing ea cupidatat. Duis anim nisi officia sit irure. Esse Lorem exercitation ex ut.",
-        "type": "MarkdownRemark",
-        "contentDigest": "9304d2b17c21b41be5bdbc52e4e15a03",
-        "owner": "gatsby-transformer-remark"
-      },
-      "frontmatter": {
-        "title": "Post 2",
-        "path": "/en/post-2",
-        "date": "06-09-2018",
-        "author": "Jonny S",
-        "language": "en",
-        "_PARENT": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md absPath of file",
-        "parent": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md absPath of file"
-      },
-      "excerpt": "",
-      "rawMarkdownBody": "\n##This is Post 2\n\nTempor duis nisi ipsum deserunt Lorem duis voluptate aliqua deserunt ipsum occaecat consectetur velit ipsum. Minim eu eu culpa deserunt sit quis reprehenderit velit sunt esse non irure quis velit. Incididunt magna ipsum anim cillum excepteur proident excepteur aliquip tempor.\n\nCillum enim sint excepteur laborum mollit nulla dolore dolore id pariatur. Ea ullamco ex aute aliquip deserunt. Quis deserunt fugiat adipisicing ea cupidatat. Duis anim nisi officia sit irure. Esse Lorem exercitation ex ut.",
-      "fileAbsolutePath": "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md"
-    },
-    "SitePage /cn/post-1": {
-      "layout": "index",
-      "jsonName": "cn-post-1.json",
-      "internalComponentName": "ComponentCnPost1",
-      "path": "/cn/post-1",
-      "component": "/Users/robinclark/sites/gatsby-blog/src/templates/blog-post.js",
-      "componentChunkName": "component---src-templates-blog-post-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/robinclark/sites/gatsby-blog/src/templates/blog-post.js",
-      "id": "SitePage /cn/post-1",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "4c3a8c395331cc493a82580cca11c0e3",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
+        "type": "SiteSearchIndex",
+        "content": "\"/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2018-06-09-post1.en.md absPath of file >>> MarkdownRemark\"",
+        "contentDigest": "bf1627a30378dd553ac5484d7345c9f7",
+        "owner": "@andrew-codes/gatsby-plugin-elasticlunr-search"
       }
     },
     "SitePage /en/for-contributors/": {
@@ -2143,28 +2246,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d742fd6a1a705e345e7648ac652cbf28",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /cn/introduction": {
-      "layout": "index",
-      "jsonName": "cn-introduction.json",
-      "internalComponentName": "ComponentCnIntroduction",
-      "path": "/cn/introduction",
-      "component": "/Users/robinclark/sites/gatsby-blog/src/templates/blog-post.js",
-      "componentChunkName": "component---src-templates-blog-post-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/robinclark/sites/gatsby-blog/src/templates/blog-post.js",
-      "id": "SitePage /cn/introduction",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "a9ac2d3cc60ed8d6eff0bb24eac02820",
+        "contentDigest": "843b3950c4cb835df98c3c13fdfe3021",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -2185,28 +2267,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "20fb3ae5a71929e11ac45921af3b8a5c",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /en/post-1": {
-      "layout": "index",
-      "jsonName": "en-post-1.json",
-      "internalComponentName": "ComponentEnPost1",
-      "path": "/en/post-1",
-      "component": "/Users/robinclark/sites/gatsby-blog/src/templates/blog-post.js",
-      "componentChunkName": "component---src-templates-blog-post-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/robinclark/sites/gatsby-blog/src/templates/blog-post.js",
-      "id": "SitePage /en/post-1",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "92c6f2467adee70d3d1eca16f67ee7e6",
+        "contentDigest": "4fd3878b41d863eeb7f88074b0e6ce96",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -2227,7 +2288,70 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "23bc70a78c3e0577ee928de640894cbe",
+        "contentDigest": "d5bafe2346660b4d9fb9947ecd313635",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /cn/introduction": {
+      "layout": "index",
+      "jsonName": "cn-introduction.json",
+      "internalComponentName": "ComponentCnIntroduction",
+      "path": "/cn/introduction",
+      "component": "/Users/robinclark/sites/gatsby-blog/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/robinclark/sites/gatsby-blog/src/templates/blog-post.js",
+      "id": "SitePage /cn/introduction",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "5c4d980c721297622de19a4b7fd41311",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /cn/post-1": {
+      "layout": "index",
+      "jsonName": "cn-post-1.json",
+      "internalComponentName": "ComponentCnPost1",
+      "path": "/cn/post-1",
+      "component": "/Users/robinclark/sites/gatsby-blog/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/robinclark/sites/gatsby-blog/src/templates/blog-post.js",
+      "id": "SitePage /cn/post-1",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "57059e01431585a2adfebf698452e93a",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /en/post-1": {
+      "layout": "index",
+      "jsonName": "en-post-1.json",
+      "internalComponentName": "ComponentEnPost1",
+      "path": "/en/post-1",
+      "component": "/Users/robinclark/sites/gatsby-blog/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/robinclark/sites/gatsby-blog/src/templates/blog-post.js",
+      "id": "SitePage /en/post-1",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f6d7bea9a6508255bf784b7460d78c6e",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -2248,7 +2372,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2194361aad22ff716dc79019861f4a6d",
+        "contentDigest": "088819bc5f1e575b1e23ce304fb4107b",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -2269,7 +2393,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c0037b39afae5845b3b22b2f59796321",
+        "contentDigest": "994a2c33956e5cbacdc6a43044ce7805",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -2290,7 +2414,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a81b9b25dc3768f1f466f900468f1f42",
+        "contentDigest": "da0353db6625812d9e4c4d0377e26556",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -2311,7 +2435,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "60a5cfe53ff7f5c008ccbbc7cf2aef9c",
+        "contentDigest": "a988c1a196d4ab04720f524158b2d0ce",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -2332,7 +2456,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e2c4413b15dfb8c30397bc49596bfd1f",
+        "contentDigest": "05a0a68bb2839603edfa4582e8b78eab",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -2353,7 +2477,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "24226ed20bb650a1253c26aab0bb9237",
+        "contentDigest": "a82c0955dac4eede0f58c5cda922b515",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -2374,7 +2498,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f391feae5ac71dc127d8672426d0e401",
+        "contentDigest": "3cae2faa1a95f61cdd36b0e7078e62a0",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -2395,7 +2519,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "0d9c1f679a5d7543fc5ce7ffa4e519b3",
+        "contentDigest": "88e230e505cfc4452f715b3639b74983",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -2416,7 +2540,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1b83ef90de2315490f2d0510d3b237c6",
+        "contentDigest": "a9f6855461e622e41238ec0f2d5c16a0",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -2437,7 +2561,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "66da03772c3caa4ba41fdf1037a3746c",
+        "contentDigest": "900b29945350feb354da022296ff89dc",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -2458,7 +2582,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d7837110fb1b0898b1cb02e33bdd44fb",
+        "contentDigest": "2fdbd11fb52e4545f9b611c8fb25150e",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -2466,29 +2590,32 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "b9d7e138b30251f3ad3398d1c38ea8b7"
+    "PLUGINS_HASH": "59d0c8b5215f0aa178ae03b7391bb9ac"
   },
   "componentDataDependencies": {
     "nodes": {
-      "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file >>> MarkdownRemark": [
-        "/cn/post-1"
-      ],
       "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-13-for-contributors.en.md absPath of file >>> MarkdownRemark": [
         "/en/for-contributors/"
-      ],
-      "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2017-01-01-index.cn.md absPath of file >>> MarkdownRemark": [
-        "/cn/introduction"
       ],
       "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2017-01-19-glossary.en.md absPath of file >>> MarkdownRemark": [
         "/en/glossary/"
       ],
-      "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2018-06-09-post1.en.md absPath of file >>> MarkdownRemark": [
-        "/en/post-1"
-      ],
       "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2019-06-09-post2.en.md absPath of file >>> MarkdownRemark": [
         "/en/post-2"
       ],
+      "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2017-01-01-index.cn.md absPath of file >>> MarkdownRemark": [
+        "/cn/introduction"
+      ],
+      "/Users/robinclark/sites/gatsby-blog/src/pages/cn/docs/2019-06-09-post1.cn.md absPath of file >>> MarkdownRemark": [
+        "/cn/post-1"
+      ],
+      "/Users/robinclark/sites/gatsby-blog/src/pages/en/docs/2018-06-09-post1.en.md absPath of file >>> MarkdownRemark": [
+        "/en/post-1"
+      ],
       "Site": [
+        "LAYOUT___index"
+      ],
+      "SearchIndex < Site": [
         "LAYOUT___index"
       ]
     },
